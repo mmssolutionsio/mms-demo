@@ -1,0 +1,7 @@
+{
+  "show-pdf-image": {
+    "label": "Show PDF image",
+    "type": "option",
+    "value": "show-pdf-image"
+  }
+}

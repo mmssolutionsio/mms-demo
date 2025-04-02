@@ -1,0 +1,182 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/fonts-pdf" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+div.ro-toc a {
+  color: black;
+  text-decoration: none;
+}
+
+div.ro-toc a::after {
+  content: leader(dotted) target-counter(attr(href), page);
+}
+
+.ro-toc-heading::before {
+  content: none;
+}
+
+div.ro-toc {
+  break-after: page;
+}
+
+div.ro-toc > h2 {
+  break-before: avoid;
+}
+
+div.ro-toc div {
+  margin-bottom: 1.5pt;
+}
+
+div.ro-toc-acc {
+  -ro-pdf-tag-type: none;
+}
+
+div.ro-toc-acc > div {
+  -ro-pdf-tag-type: TOC;
+}
+
+div.ro-toc-acc > div div {
+  -ro-pdf-tag-type: TOCI;
+}
+
+div.ro-toc-acc > div div div {
+  -ro-pdf-tag-type: Reference;
+}
+
+
+/* Compact Tables */
+
+table.awesomizr-compact-table,
+table.awesomizr-compact-table > :is(thead, tbody, tfoot, caption),
+table.awesomizr-compact-table > :is(thead, tbody, tfoot) > tr,
+table.awesomizr-compact-table > :is(thead, tbody, tfoot) > tr :is(td, th) {
+  display: block;
+}
+
+table.awesomizr-compact-table > tbody > tr {
+  display: grid;
+}
+
+table.awesomizr-compact-table .awesomizr-compact-table-header-cell {
+  margin-right: 0.5em;
+  text-align: start;
+  -ro-priority: -1;
+}
+
+table.awesomizr-compact-table > tbody > tr {
+  margin-bottom: 0.5em;
+  -ro-priority: -1;
+}
+
+/* Hide the elements but make them available for accessibility */
+table.awesomizr-compact-table > :is(thead, tfoot) {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* Recreate default tagging */
+table.awesomizr-compact-table {
+  -ro-pdf-tag-type: "Table";
+}
+
+table.awesomizr-compact-table > thead {
+  -ro-pdf-tag-type: "THead";
+}
+
+table.awesomizr-compact-table > tbody {
+  -ro-pdf-tag-type: "TBody"
+}
+
+table.awesomizr-compact-table > caption {
+  -ro-pdf-tag-type: "Caption";
+}
+
+table.awesomizr-compact-table > :is(thead, tbody, tfoot) > tr {
+  -ro-pdf-tag-type: "TR";
+}
+
+table.awesomizr-compact-table > :is(thead, tbody, tfoot) > tr > td {
+  -ro-pdf-tag-type: "TD";
+}
+
+table.awesomizr-compact-table > :is(thead, tbody, tfoot) > tr > th {
+  -ro-pdf-tag-type: "TH";
+}
+
+table.awesomizr-compact-table > :is(thead, tbody, tfoot) > tr > :is(td, th) {
+  -ro-pdf-tag-actual-text: attr(data-awesomizr-content);
+}
+
+
+table.awesomizr-compact-table .awesomizr-compact-table-header-cell {
+  -ro-pdf-tag-type: artifact;
+}
+
+
+
+.ro-toc{
+  .ro-toc-level-2 {
+    float: right;
+    width: calc(100% - 150pt);
+    a{
+      color: #3a3a39;
+      @include font-style-print(text);
+      font-family: $font-family-libre-baskerville;
+      color: #45423F;
+      &:after{
+        font-family: $font-family-league-spartan;
+        @include font-style-print(table);
+        font-weight: 600;
+        content: leader(space) target-counter(attr(href), page);
+      }
+    }
+  }
+  .ro-toc-level-1 {
+    &:before {
+      display: block;
+      content: "";
+      width: 100vw;
+      border-top: 1px solid #D6D6D6;
+      clear: both
+    }
+    max-width: 150pt;
+    float: left;
+    font-size: 35pt;
+    position: relative;
+    top: 24pt;
+    a{
+      @include font-style-print(h1);
+      color: $color-essence-orange;
+      font-family:$font-family-league-spartan ;
+      position:relative;
+      top:10pt;
+      &:after {
+        display: none
+      }
+    }
+    &:first-of-type {
+      top: 0
+    }
+  }
+  &:after{
+    clear: both;
+    content: "";
+    display: block
+  }
+}
+
+
+.ro-toc .ro-toc-level-1 + .ro-toc-level-2:before {
+  content: "";
+  display: block;
+  height: 15pt
+}
+.srlp-pdf-toc{
+  .srlp-pdf-toc-label{
+    @include font-style-print(h2);
+    text-align: right;
+    color: $color-essence-orange;
+    font-family:$font-family-league-spartan ;
+  }
+}

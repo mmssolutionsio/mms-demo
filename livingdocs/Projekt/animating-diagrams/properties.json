@@ -1,0 +1,59 @@
+{
+  "srlp-animating-diagrams-columns": {
+    "label": "Columns Count (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (12 Columns)"
+      },
+      {
+        "caption": "1 Column",
+        "value": "_col-1"
+      },
+      {
+        "caption": "2 Columns",
+        "value": "_col-2"
+      },
+      {
+        "caption": "3 Columns",
+        "value": "_col-3"
+      },
+      {
+        "caption": "4 Columns",
+        "value": "_col-4"
+      },
+      {
+        "caption": "5 Columns",
+        "value": "_col-5"
+      },
+      {
+        "caption": "6 Columns",
+        "value": "_col-6"
+      },
+      {
+        "caption": "7 Columns",
+        "value": "_col-7"
+      },
+      {
+        "caption": "8 Columns",
+        "value": "_col-8"
+      },
+      {
+        "caption": "9 Columns",
+        "value": "_col-9"
+      },
+      {
+        "caption": "10 Columns",
+        "value": "_col-10"
+      },
+      {
+        "caption": "11 Columns",
+        "value": "_col-11"
+      },
+      {
+        "caption": "12 Columns",
+        "value": "_col-12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/reset" as *;
+@use "/src/assets/scss/user-style/fonts" as *;
+@use "/src/assets/scss/user-style/grid" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+@use "/src/assets/scss/user-style/user-style" as *;
+
+.srlp-animating-number {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  //@include text-color($color-essence-orange);
+  .srlp-animating-number-small{
+    align-self: end;
+    //@include typo-font-size($font-family-league-spartan,18px, 30px );
+    .srlp-animating-number-small-number{
+      margin: 0 $space-xs;
+    }
+  }
+  .srlp-animating-number-big{
+    //@include typo-font-size($font-family-league-spartan,75px, 120px );
+    //@include typo-line-height(75px, 120px);
+    .srlp-animating-number-big-number{
+      margin: 0 $space-s;
+    }
+  }
+  .srlp-animating-number-label{
+    //@include typo-font-size($font-family-league-spartan,18px, 30px );
+  }
+
+}

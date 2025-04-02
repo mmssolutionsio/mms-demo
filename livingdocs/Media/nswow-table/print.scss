@@ -1,0 +1,44 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-nswow-table {
+  margin: 16pt 0;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+    @include font-style-print(table);
+    tbody{
+      tr{
+        border-bottom:0.5px solid #A3ACB2;
+        color:#000;
+        font-family: $font-family-league-spartan;
+        font-style: normal;
+        td{
+          padding: 0 5px;
+          &.head{
+
+          }
+          &.ns-horizontal-left{
+            text-align: left;
+          }
+          &.ns-horizontal-right{
+            text-align: right;
+          }
+          &.srl-background-06{
+            background: #e63d2e1a;
+          }
+        }
+        &.head{
+          border-top:1.5px solid #A3ACB2;
+          border-bottom:1.5px solid #000;
+          color:#000;
+          font-family: $font-family-league-spartan;
+          font-style: normal;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

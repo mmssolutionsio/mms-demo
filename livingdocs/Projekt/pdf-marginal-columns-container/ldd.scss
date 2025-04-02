@@ -1,0 +1,37 @@
+@use "_web";
+@use "/src/assets/scss/user-style/variables" as *;
+
+
+$marginal-width: 30%;
+
+.srlp-pdf-marginal-columns{
+  ._section-row{
+    display: flex;
+    flex-direction: row;
+    ._section-col-left{
+      display: block;
+      max-width: $marginal-width;
+      min-width: $marginal-width;
+      width: $marginal-width;
+      break-inside: auto;
+    }
+    ._section-col-right{
+      display: block;
+      width: calc(100% - $marginal-width);
+    }
+  }
+  &._is_marginal_right{
+    ._section-row{
+      ._section-col-right{
+        max-width: $marginal-width;
+        min-width: $marginal-width;
+        width: $marginal-width;
+      }
+      ._section-col-left{
+        max-width: calc(100% - $marginal-width);
+        min-width: calc(100% - $marginal-width);
+        width: calc(100% - $marginal-width);
+      }
+    }
+  }
+}

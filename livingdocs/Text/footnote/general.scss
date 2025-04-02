@@ -1,0 +1,9 @@
+@use 'nswow';
+
+$numberSize: 50;
+
+.srl-footnote {
+  break-before: auto;
+  break-inside: avoid;
+  break-after: auto;
+}

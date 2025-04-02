@@ -1,0 +1,149 @@
+//LeagueSpartan
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Bold.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Bold.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Bold.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraLight.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraLight.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraLight.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Regular.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Regular.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Regular.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Regular.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Light.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Light.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Light.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Light.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Black.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Black.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Black.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Black.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Medium.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Medium.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Medium.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Medium.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraBold.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraBold.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraBold.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-SemiBold.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-SemiBold.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-SemiBold.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Thin.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Thin.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Thin.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Thin.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LeagueSpartan-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+//LibreBaskerville
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Bold.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Bold.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Bold.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Regular.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Regular.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Regular.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Italic.eot');
+  src: url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Italic.woff2') format('woff2'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Italic.woff') format('woff'),
+  url('https://nswow-ld.nswow.ch/designs/ld-demo-new/2.0.7/assets/LibreBaskerville-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+

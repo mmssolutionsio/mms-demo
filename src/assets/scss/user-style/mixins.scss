@@ -1,0 +1,290 @@
+@use "variables" as *;
+
+// Mixin für Web-Schriftstil (mobile + desktop)
+@mixin font-style-web($element) {
+  $mobile: map-get(map-get($font-styles, mobile), $element);
+  $desktop: map-get(map-get($font-styles, desktop), $element);
+
+  font-size: map-get($mobile, font-size);
+  line-height: map-get($mobile, line-height);
+  font-weight: map-get($mobile, font-weight);
+  b,
+  strong{
+    font-weight: map-get($mobile, strong-weight);
+  }
+
+  @media (min-width: $break-point-master) {
+    font-size: map-get($desktop, font-size);
+    line-height: map-get($desktop, line-height);
+    font-weight: map-get($desktop, font-weight);
+    b,
+    strong{
+      font-weight: map-get($desktop, strong-weight);
+    }
+  }
+}
+
+// Mixin für Print-Schriftstil
+@mixin font-style-print($element) {
+  $print: map-get(map-get($font-styles, print), $element);
+
+  font-size: map-get($print, font-size);
+  line-height: map-get($print, line-height);
+  font-weight: map-get($print, font-weight);
+  b,
+  strong{
+    font-weight: map-get($print, strong-weight);
+  }
+}
+
+
+// Definiere Container-Breiten
+$container-widths: (
+        standard: 960px,
+        large: 1200px
+);
+
+// Definiere Breakpoints für Media Queries
+$breakpoints: (
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px
+);
+
+// Mixin für Container
+@mixin container($type: "Default") {
+  @if $type == "Default" {
+    width: auto;
+    max-width: none;
+  } @else if $type == "Standard" {
+    // Nutzt den Wert aus $container-widths
+    max-width: map-get($container-widths, standard);
+    width: 100%; // Sorgt für responsive Breite innerhalb des Containers
+    margin-left: auto;
+    margin-right: auto;
+  } @else if $type == "Large" {
+    // Nutzt den Wert aus $container-widths
+    max-width: map-get($container-widths, large);
+    width: 100%; // Sorgt für responsive Breite innerhalb des Containers
+    margin-left: auto;
+    margin-right: auto;
+  } @else if $type == "Screen width" {
+    // Volle Breite des Bildschirms
+    width: 100%;
+    max-width: none;
+  } @else {
+    // Fallback für ungültige Eingaben
+    @warn "Ungültiger Typ #{$type} für das Container-Mixin.";
+  }
+}
+
+/*
+
+
+
+
+//OLD
+@mixin typo-font-size(
+  $font-family,
+  $mobile-font-size,
+  $desktop-font-size,
+  $breakpoint: $break-point-master
+) {
+  font-family: $font-family;
+  font-size: $mobile-font-size;
+
+  @media (min-width: $breakpoint) {
+    font-size: $desktop-font-size;
+  }
+}
+
+
+@mixin typo-font-style(
+  $mobile-font-style,
+  $desktop-font-style: $mobile-font-style,
+  $breakpoint: $break-point-master
+) {
+  font-style: $mobile-font-style;
+
+  @media (min-width: $breakpoint) {
+    font-style: $desktop-font-style;
+  }
+}
+
+
+@mixin typo-font-weight(
+  $mobile-font-weight,
+  $desktop-font-weight: $mobile-font-weight,
+  $breakpoint: $break-point-master
+) {
+  font-weight: $mobile-font-weight;
+
+  @media (min-width: $breakpoint) {
+    font-weight: $desktop-font-weight;
+  }
+}
+
+
+
+@mixin typo-text-decoration(
+  $mobile-text-decoration,
+  $desktop-text-decoration: $mobile-text-decoration,
+  $breakpoint: $break-point-master
+) {
+  text-decoration: $mobile-text-decoration;
+
+  @media (min-width: $breakpoint) {
+    text-decoration: $desktop-text-decoration;
+  }
+}
+
+
+
+
+
+@mixin typo-line-height(
+  $mobile-line-height,
+  $desktop-line-height: $mobile-line-height,
+  $breakpoint: $break-point-master
+) {
+  line-height: $mobile-line-height;
+
+  @media (min-width: $breakpoint) {
+    line-height: $desktop-line-height;
+  }
+}
+
+
+
+@mixin typo-letter-spacing(
+  $mobile-letter-spacing,
+  $desktop-letter-spacing: $mobile-letter-spacing,
+  $breakpoint: $break-point-master
+) {
+  letter-spacing: $mobile-letter-spacing;
+
+  @media (min-width: $breakpoint) {
+    letter-spacing: $desktop-letter-spacing;
+  }
+}
+
+@mixin typo-letter-spacing-print(
+  $letter-spacing
+) {
+  letter-spacing: $letter-spacing;
+}
+
+@mixin typo-text-transform(
+  $mobile-text-transform,
+  $desktop-text-transform: $mobile-text-transform,
+  $breakpoint: $break-point-master
+) {
+  text-transform: $mobile-text-transform;
+
+  @media (min-width: $breakpoint) {
+    text-transform: $desktop-text-transform;
+  }
+}
+
+
+
+@mixin text-color(
+  $mobile-text-color,
+  $desktop-text-color: $mobile-text-color,
+  $breakpoint: $break-point-master
+) {
+  color: $mobile-text-color;
+
+  @media (min-width: $breakpoint) {
+    color: $desktop-text-color;
+  }
+}
+
+@mixin text-stroke(
+  $mobile-stroke-width: 0,
+  $mobile-stroke-color: transparent,
+  $desktop-stroke-width: $mobile-stroke-width,
+  $desktop-stroke-color: $mobile-stroke-color,
+  $breakpoint: $break-point-desktop
+) {
+  @if $mobile-stroke-width > 0 {
+    -webkit-text-stroke: $mobile-stroke-width $mobile-stroke-color;
+  }
+  else {
+    -webkit-text-stroke: none;
+  }
+  @media (min-width: $breakpoint) {
+    @if $desktop-stroke-width > 0 {
+      -webkit-text-stroke: $desktop-stroke-width $desktop-stroke-color;
+    }else{
+    -webkit-text-stroke: none;
+    }
+  }
+}
+
+
+
+//Print Mixin
+@mixin text-color-print(
+  $text-color
+) {
+  color: $text-color;
+
+}
+
+@mixin typo-font-style-print(
+  $font-style
+) {
+  font-style: $font-style;
+}
+
+@mixin typo-font-weight-print(
+  $font-weight
+) {
+  font-weight: $font-weight;
+}
+
+@mixin typo-text-decoration-print(
+  $text-decoration
+) {
+  text-decoration: $text-decoration;
+}
+
+@mixin typo-font-size-print(
+  $font-family,
+  $font-size
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+@mixin typo-text-transform-print(
+  $text-transform
+) {
+  text-transform: $text-transform;
+}
+
+@mixin text-stroke-print(
+  $stroke-width: 0,
+  $stroke-color: transparent,
+) {
+  @if $stroke-width > 0 {
+    -webkit-text-stroke: $stroke-width $stroke-color;
+  }
+  else {
+    -webkit-text-stroke: none;
+  }
+}
+
+@mixin typo-line-height-print(
+  $line-height
+) {
+  line-height: $line-height;
+}
+
+
+
+*/
+

@@ -1,0 +1,20 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-title-h1{
+  @include font-style-print(h1);
+  color: $color-text;
+  font-family: $font-family-league-spartan;
+  font-style: normal;
+  margin: 16pt 0 !important;
+  padding:0;
+  text-transform: none;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}

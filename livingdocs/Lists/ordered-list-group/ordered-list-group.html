@@ -1,0 +1,28 @@
+<script type="ld-conf">
+  {
+  	"name": "ordered-list-group",
+  	"label": "List (numeric)",
+  	"iconUrl": "https://mms-xbrl.s3.eu-central-1.amazonaws.com/design/svg/editor/icon-ordered-list.min.svg",
+  	"properties": [
+      "srlp-web-width"
+    ],
+  	"directives": {
+  		"list": {
+  			"allowedChildren": ["list-item"],
+  			"defaultComponents": {
+  				"paragraph": "list-item"
+  			},
+  			"defaultContent": [{
+  				"component": "list-item"
+  			}]
+  		}
+  	}
+  }
+</script>
+<div class="srlp-grid srl-ordered-list-group">
+  <div class="srlp-grid-child">
+    <ol data-container-label="List container" doc-container="list" ></ol>
+  </div>
+</div>
+
+

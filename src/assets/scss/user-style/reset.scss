@@ -1,0 +1,46 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* Setzt die Schriftgröße auf 16px, standardmäßig */
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Verhindert Text-Zoom auf mobilen Geräten */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif; /* Setze eine Standard-Schriftart */
+  background-color: #fff;
+  color: #000;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; /* Sorgt dafür, dass Medien in ihren Container passen */
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* Übernimmt die Schrift-Eigenschaften vom Elternelement */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

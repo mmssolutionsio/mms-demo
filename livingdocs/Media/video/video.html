@@ -1,0 +1,25 @@
+<script type="ld-conf">
+   {
+   	"name": "video",
+   	"label": "Video",
+  "iconUrl": "https://mms-xbrl.s3.eu-central-1.amazonaws.com/design/svg/editor/icon-video.min.svg",
+   	"properties": [
+  	"srlp-web-width",
+  	"srlp-hide-in-pdf"
+  ],
+   	"directives": {
+   		"background": {
+   			"imageRatios": ["16:9"],
+   			"allowOriginalRatio": false
+   		}
+   	}
+   }
+</script>
+<div class="srl-video srlp-grid">
+  <div class="srl-video__inner srlp-grid-child">
+    <div class="srl-video__video-thumbnail" doc-image="background"></div>
+    <div doc-html="free-html" class="srl-video__video-container">
+      <div class="iframe-placeholder"></div>
+    </div>
+  </div>
+</div>

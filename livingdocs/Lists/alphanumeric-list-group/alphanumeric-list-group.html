@@ -1,0 +1,27 @@
+<script type="ld-conf">
+  {
+  	"name": "alphanumeric-list-group",
+  	"label": "List (alphanumeric)",
+  	"iconUrl": "https://mms-xbrl.s3.eu-central-1.amazonaws.com/design/svg/editor/icon-alphanumeric-list.min.svg",
+  	"properties": [
+      "srlp-web-width"
+    ],
+  	"directives": {
+  		"list": {
+  			"allowedChildren": ["list-item"],
+  			"defaultComponents": {
+  				"paragraph": "list-item"
+  			},
+  			"defaultContent": [{
+  				"component": "list-item"
+  			}]
+  		}
+  	}
+  }
+</script>
+<div class="srl-alphanumeric-list-group srlp-grid">
+  <div class="srlp-grid-child">
+    <ol data-container-label="List container" doc-container="list" ></ol>
+  </div>
+</div>
+

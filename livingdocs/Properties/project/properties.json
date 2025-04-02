@@ -1,0 +1,159 @@
+{
+  "srlp-web-width": {
+    "label": "Web width (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (Template)"
+      },
+      {
+        "caption": "Text",
+        "value": "srlp-grid__text"
+      },
+      {
+        "caption": "Content",
+        "value": "srlp-grid__content"
+      },
+      {
+        "caption": "Full",
+        "value": "srlp-grid__full"
+      }
+    ]
+  },
+  "srlp-background-class": {
+    "label": "Background Color (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default"
+      },
+      {
+        "caption": "Essence Orange",
+        "value": "_bg-color-essence-orange"
+      },
+      {
+        "caption": "Cream",
+        "value": "_bg-color-cream"
+      },
+      {
+        "caption": "White",
+        "value": "_bg-color-white"
+      }
+    ]
+  },
+  "srlp-hide-in-pdf": {
+    "label": "Hide in PDF",
+    "type": "option",
+    "value": "srlp-hide-in-pdf"
+  },
+  "srlp-btn-class": {
+    "label": "button Style (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default"
+      },
+      {
+        "caption": "Essence Orange",
+        "value": "_btn-color-essence-orange"
+      },
+      {
+        "caption": "Cream",
+        "value": "_btn-color-cream"
+      },
+      {
+        "caption": "Black",
+        "value": "_btn-color-black"
+      }
+    ]
+  },
+  "srlp-text-color-class": {
+    "label": "Text Color (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default"
+      },
+      {
+        "caption": "Essence Orange",
+        "value": "_text-color-essence-orange"
+      },
+      {
+        "caption": "Cream",
+        "value": "_text-color-cream"
+      },
+      {
+        "caption": "Black",
+        "value": "_text-color-black"
+      }
+    ]
+  },
+  "srlp-text-style-class": {
+    "label": "Appearance (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (Template code styles)"
+      },
+
+      {
+        "caption": "Outline Style Small Strong Mix (WEB ONLY)",
+        "value": "_text-typo-outline-small-strong-mix"
+      },
+      {
+        "caption": "Outline Style Small (WEB ONLY)",
+        "value": "_text-typo-outline-small"
+      },
+      {
+        "caption": "Outline Style Big (WEB ONLY)",
+        "value": "_text-typo-outline-big"
+      },
+      {
+        "caption": "Title 1",
+        "value": "_text-typo-title-1"
+      },
+      {
+        "caption": "Title 2",
+        "value": "_text-typo-title-2"
+      },
+      {
+        "caption": "Title 3",
+        "value": "_text-typo-title-3"
+      },
+      {
+        "caption": "Quote",
+        "value": "_text-typo-quote"
+      },
+
+      {
+        "caption": "Letter",
+        "value": "_text-typo-letter"
+      },
+      {
+        "caption": "Paragraph",
+        "value": "_text-typo-paragraph"
+      },
+      {
+        "caption": "Image Description",
+        "value": "_text-typo-image-description"
+      },
+      {
+        "caption": "Link",
+        "value": "_text-typo-link"
+      }
+    ]
+  },
+  "srlp-pdf-break-colum": {
+    "label": "Break Column (Project - PDF ONLY)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "NO"
+      },
+      {
+        "caption": "Yes",
+        "value": "_pdf_break_colum"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+@use "nswow";
+.srlp-pdf-cover-page{
+  ._main_cover_and_image{
+    ._background{}
+    ._text_1{}
+    ._text_2{}
+    ._logo{}
+  }
+  ._label_top{}
+  ._label_btn{}
+  &._is_color_label_top{
+    ._label_top{
+      ._text_3{}
+    }
+  }
+  &._is_color_label_btn{
+    ._label_btn{
+      ._text_3{}
+    }
+  }
+  &._is_main_cover{
+    ._main_cover_and_image{
+      ._background{}
+      ._text_1{}
+      ._text_2{}
+      ._logo{}
+    }
+  }
+}

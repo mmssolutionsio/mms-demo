@@ -1,0 +1,68 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/reset" as *;
+@use "/src/assets/scss/user-style/fonts" as *;
+@use "/src/assets/scss/user-style/grid" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+@use "/src/assets/scss/user-style/user-style" as *;
+
+.srlp-image-container {
+  min-height: 50vw;
+  background-position: center;
+  background-size: cover;
+  align-items: stretch;
+  padding-top:$space-m;
+  padding-bottom:$space-m;
+  @media (min-width: $break-point-master) {
+    padding-top:$space-xl;
+    padding-bottom:$space-xl;
+  }
+  .srlp-image-container-holder {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: end;
+    .srlp-image-container__headline-container {
+      display: none;
+    }
+    .srlp-image-container__subheadline-container {
+      width: 100%;
+      align-self: flex-end;
+    }
+  }
+  &._is-hero-element{
+    .srlp-image-container-holder{
+      justify-content: space-between;
+      .srlp-image-container__headline-container {
+        display: block;
+        width: 100%;
+        align-self: flex-start;
+      }
+      .srlp-image-container__subheadline-container {
+        width: 100%;
+        align-self: flex-end;
+        margin-bottom: -125px;
+        .srl-article__grid{
+          .srl-article__grid--inner{
+            justify-self: center;
+            @media (min-width: $break-point-master) {
+              justify-self: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin dynamic-height($max: 100) {
+  @for $i from 10 through $max {
+    .srlp-image-container._height-#{$i} {
+      min-height: #{$i}vh;
+    }
+  }
+}
+
+@include dynamic-height(100);

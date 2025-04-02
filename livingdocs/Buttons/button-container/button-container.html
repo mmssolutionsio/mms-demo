@@ -1,0 +1,28 @@
+<script type="ld-conf">
+  {
+  	"name": "button-container",
+  	"label": "Button container",
+  	"iconUrl": "https://mms-xbrl.s3.eu-central-1.amazonaws.com/design/svg/editor/icon-button-container.min.svg",
+  	"properties": [
+  	  "srlp-web-width",
+  		"horizontal-alignment"
+  	],
+  	"directives": {
+  		"button-container": {
+  			"allowedChildren": [
+  			    "button"
+  			],
+  			"defaultComponents": {
+  				"paragraph": "button"
+  			},
+  			"defaultContent": [{
+  				"component": "button"
+  			}]
+  		}
+  	}
+  }
+</script>
+<div class="srl-button-container srlp-grid">
+  <div
+    class="srl-button-container__inner srlp-grid-child"  doc-container="button-container"></div>
+</div>

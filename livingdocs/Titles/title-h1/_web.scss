@@ -1,0 +1,21 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-title-h1{
+  @include font-style-web(h1);
+  color: $color-text;
+  font-family: $font-family-league-spartan;
+  font-style: normal;
+  margin: 16px 0;
+  padding:0;
+  text-transform: uppercase;
+  letter-spacing: 1.14px;
+  @media (min-width: $break-point-master) {
+    letter-spacing: 3px;
+  }
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+}

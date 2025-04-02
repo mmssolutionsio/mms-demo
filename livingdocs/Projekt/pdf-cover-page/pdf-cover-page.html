@@ -1,0 +1,82 @@
+<script type="ld-conf">
+  {
+    "name": "pdf-cover-page",
+    "label": "PDF Cover Page",
+    "properties": [
+      "srlp-pdf-cover-page-type"
+    ],
+    "directives": {
+      "text-3": {
+        "allowedChildren": [
+          "title-h1",
+          "title-h2",
+          "title-h3",
+          "title-h4",
+          "title-h5",
+          "title-h6",
+          "paragraph"
+        ],
+        "defaultComponents": {
+          "paragraph": "paragraph"
+        },
+        "defaultContent": [
+          {
+            "component": "paragraph"
+          }
+        ]
+      },
+      "text-4": {
+        "allowedChildren": [
+          "title-h1",
+          "title-h2",
+          "title-h3",
+          "title-h4",
+          "title-h5",
+          "title-h6",
+          "paragraph"
+        ],
+        "defaultComponents": {
+          "paragraph": "paragraph"
+        },
+        "defaultContent": [
+          {
+            "component": "paragraph"
+          }
+        ]
+      },
+      "logo-top": {
+        "imageRatios": [
+          "imagebox"
+        ],
+        "allowOriginalRatio": true
+      },
+      "logo": {
+        "imageRatios": [
+          "imagebox"
+        ],
+        "allowOriginalRatio": true
+      }
+    }
+  }
+
+</script>
+<div class="srlp-pdf-cover-page page _page-no-margin" data-container-label="PDF Cover Page">
+  <div class="_main_cover_and_image">
+    <div class="_background" doc-image="pdf-cover-page-background-image">
+      <div class="_logo-top">
+        <img  doc-image="logo-top">
+      </div>
+      <div class="_logo">
+        <img  doc-image="logo">
+      </div>
+    </div>
+  </div>
+  <div class="_label_top">
+    <div class="_text_3" doc-container="text-3"></div>
+  </div>
+  <div class="_label_btn">
+    <div class="_text_4" doc-container="text-4"></div>
+  </div>
+</div>
+
+

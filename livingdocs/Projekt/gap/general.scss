@@ -1,0 +1,15 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@mixin responsive-height($spacing-map) {
+  @each $size, $value in $spacing-map {
+    ._gap-mobil-#{$size} {
+      height: $value;
+    }
+    @media (min-width: $break-point-master) {
+      ._gap-desktop-#{$size} {
+        height: $value;
+      }
+    }
+  }
+}
+
+@include responsive-height($spacing-map);

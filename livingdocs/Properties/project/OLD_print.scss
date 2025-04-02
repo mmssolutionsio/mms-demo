@@ -1,0 +1,153 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/reset" as *;
+@use "/src/assets/scss/user-style/fonts-pdf" as *;
+@use "/src/assets/scss/user-style/grid" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+@use "/src/assets/scss/user-style/user-style" as *;
+
+
+$page-top: 50mm;
+$page-btn: 50mm;
+$page-left: 30mm;
+$page-right: 40mm;
+$page-gap : 20mm;
+
+
+@page {
+  margin: 30mm 20mm;
+  size: A4;
+  @top-right {
+    content: counter(page);
+    border-bottom: 1px solid $border-color;
+    margin: 0 0 10mm 0;
+  }
+}
+
+/* Cover-Seite ohne Rand */
+@page srlpPdfCoverPage {
+  margin: 0;
+  size: A4;
+  @top-right {
+    content: "";
+  }
+}
+
+h1{
+  color: #2C2E35;
+  font-family: "League Spartan";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: none;
+  margin: 16px 0;
+  padding:0;
+}
+h2,
+._text-typo-title-2{
+  color: #E63D2E;
+  font-family: "League Spartan";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: none;
+  margin: 16px 0;
+  padding:0;
+}
+h3,
+._text-typo-title-3{
+  @include typo-font-size-print($font-family-league-spartan,48px );
+  @include typo-font-weight-print(500);
+  text-transform: none;
+  @include text-color-print($color-text);
+      line-height: normal;
+  margin: 16px 0;
+  padding:0;
+}
+p,
+._text-typo-paragraph{
+  color: #2C1C1C;
+  font-family: "Libre Baskerville";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 16px 0;
+  padding:0;
+  b,
+  strong{
+    font-weight: 700;
+  }
+}
+
+ul,
+li,
+._text-typo-paragraph{
+  color: #2C1C1C;
+  font-family: "Libre Baskerville";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  b,
+  strong{
+    font-weight: 700;
+  }
+}
+ul{
+  margin: 16px;
+}
+
+._text-typo-outline-small{
+  @include typo-font-size-print($font-family-league-spartan, 100px );
+  @include typo-font-style-print(normal);
+  @include typo-font-weight-print(700);
+      line-height: normal;
+  @include typo-letter-spacing-print(3px);
+  text-transform: none;
+  @include text-stroke-print(2px,$color-essence-orange);
+  @include text-color-print(transparent);
+}
+._text-typo-outline-big{
+  @include typo-font-size-print($font-family-league-spartan,450px );
+  @include typo-font-style-print(normal);
+  @include typo-font-weight-print(700);
+      line-height: normal;
+  @include typo-letter-spacing-print(3px);
+  text-transform: none;
+  @include text-stroke-print(3px,$color-essence-orange);
+  @include text-color-print(transparent);
+}
+
+._text-typo-quote{
+  @include typo-font-size-print($font-family-libre-baskerville,40px );
+  @include typo-font-weight-print(400);
+  @include text-color-print($color-text);
+  @include typo-font-style-print(italic);
+      line-height: normal;
+}
+
+._text-typo-image-description{
+  @include typo-font-size-print($font-family-libre-baskerville,20px );
+  @include typo-font-weight-print(400);
+  @include text-color-print($color-text);
+  @include typo-line-height-print( normal);
+}
+._text-typo-link{
+  @include typo-font-size-print($font-family-libre-baskerville ,14px );
+  @include typo-font-weight-print(400);
+  @include text-color-print($color-essence-orange);
+  @include typo-line-height-print(normal );
+  @include typo-text-decoration-print(underline);
+}
+
+.debug-pdf-width{
+  max-width:unset;
+  grid-template-columns:unset;
+  column-gap: unset;
+  padding-inline: unset;
+}
+.debug-pdf-width-inside{
+  grid-column-start: unset!important;
+}

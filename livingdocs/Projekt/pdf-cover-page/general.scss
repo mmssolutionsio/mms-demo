@@ -1,0 +1,103 @@
+@use "nswow";
+@use "/src/assets/scss/user-style/variables" as *;
+
+.srlp-pdf-cover-page{
+  page: srlpPdfCoverPage;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  ._main_cover_and_image{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    ._background{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
+    ._text_1{
+      display: none;
+    }
+    ._text_2{
+      display: none;
+    }
+    ._logo{
+      display: none;
+    }
+  }
+  ._label_top{
+    display: none;
+  }
+  ._label_btn{
+    display: none;
+  }
+  &._is_color_label_top{
+    background: $color-essence-orange;
+    ._label_top{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      ._text_3{
+        padding: 50px;
+      }
+    }
+    ._main_cover_and_image{
+      display: none;
+    }
+    ._label_btn{
+      display: none;
+    }
+  }
+  &._is_color_label_btn{
+    background: $color-essence-orange;
+    ._label_btn{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: flex-end;
+      align-items: flex-end;
+      box-sizing: border-box;
+      ._text_4{
+        padding: 50px;
+        text-align:right;
+      }
+    }
+    ._label_top{
+      display: none;
+    }
+    ._main_cover_and_image{
+      display: none;
+    }
+
+  }
+  &._is_main_cover{
+    ._main_cover_and_image{
+      display: flex;
+      ._background{
+        display: block;
+      }
+      ._logo-top{
+        display: block;
+      }
+      ._logo{
+        display: block;
+      }
+    }
+    ._label_top{
+      display: none;
+    }
+    ._label_btn{
+      display: none;
+    }
+  }
+}

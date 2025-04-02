@@ -1,0 +1,76 @@
+{
+  "srlp-gap-desktop-class": {
+    "label": "Gap Desktop (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (Template code styles)"
+      },
+      {
+        "caption": "XXXL 256px",
+        "value": "_gap-desktop-xxxl"
+      },
+      {
+        "caption": "XXL 128px",
+        "value": "_gap-desktop-xxl"
+      },
+      {
+        "caption": "XL 64px",
+        "value": "_gap-desktop-xl"
+      },
+      {
+        "caption": "L 32px",
+        "value": "_gap-desktop-l"
+      },
+      {
+        "caption": "M 16px",
+        "value": "_gap-desktop-m"
+      },
+      {
+        "caption": "S 8px",
+        "value": "_gap-desktop-s"
+      },
+      {
+        "caption": "XS 4px",
+        "value": "_gap-desktop-xs"
+      }
+    ]
+  },
+  "srlp-gap-mobil-class": {
+    "label": "Gap Mobil (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (Template code styles)"
+      },
+      {
+        "caption": "XXXL 256px",
+        "value": "_gap-mobil-xxxl"
+      },
+      {
+        "caption": "XXL 128px",
+        "value": "_gap-mobil-xxl"
+      },
+      {
+        "caption": "XL 64px",
+        "value": "_gap-mobil-xl"
+      },
+      {
+        "caption": "L 32px",
+        "value": "_gap-mobil-l"
+      },
+      {
+        "caption": "M 16px",
+        "value": "_gap-mobil-m"
+      },
+      {
+        "caption": "S 8px",
+        "value": "_gap-mobil-s"
+      },
+      {
+        "caption": "XS 4px",
+        "value": "_gap-mobil-xs"
+      }
+    ]
+  }
+}

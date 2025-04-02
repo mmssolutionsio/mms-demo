@@ -1,0 +1,175 @@
+@use "variables" as *;
+
+// Breakpoints
+$breakpoints: (
+        "sm": $break-point-smartphones,
+        "md": $break-point-tablets-portrait,
+        "lg": $break-point-tablets-landscape,
+        "xl": $break-point-desktop,
+        "xxl": $break-point-desktop-large,
+);
+
+// Container
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  @media (min-width: $break-point-smartphones) {
+    max-width: 540px;
+  }
+  @media (min-width: $break-point-tablets-portrait) {
+    max-width: 720px;
+  }
+  @media (min-width: $break-point-tablets-landscape) {
+    max-width: 960px;
+  }
+  @media (min-width: $break-point-desktop) {
+    max-width: 1140px;
+  }
+  @media (min-width: $break-point-desktop-large)  {
+    max-width: 1440px;
+  }
+  &.is-huge{
+    padding-left: 0;
+    padding-right: 0;
+    @media (min-width: $break-point-smartphones) {
+      max-width: 100%;
+    }
+
+    @media (min-width: $break-point-desktop-large)  {
+      max-width: 1920px;
+    }
+  }
+}
+
+// Container-Fluid
+.container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+// Row
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -#{calc($gutter / 2)};
+  margin-right: -#{calc($gutter / 2)};
+  .container &{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+// Columns
+.col {
+  flex: 1;
+  padding-left: calc($gutter / 2);
+  padding-right: calc($gutter / 2);
+  .container &{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Globale Spaltenklassen
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 calc(100% / $columns * $i);
+    max-width: calc(100% / $columns * $i);
+  }
+}
+
+// Responsive Spaltenklassen
+@each $breakpoint, $value in $breakpoints {
+  @for $i from 1 through $columns {
+    .col-#{$breakpoint}-#{$i} {
+      @media (min-width: $value) {
+        flex: 0 0 calc(100% / $columns * $i);
+        max-width: calc(100% / $columns * $i);
+      }
+    }
+  }
+}
+
+// Auto-Spalte
+.col-auto {
+  flex: 0 0 auto;
+  max-width: none;
+}
+
+// Responsive Auto-Spalte
+@each $breakpoint, $value in $breakpoints {
+  .col-#{$breakpoint}-auto {
+    @media (min-width: $value) {
+      flex: 0 0 auto;
+      max-width: none;
+    }
+  }
+}
+
+// Order Klassen
+@for $i from 1 through $columns {
+  .order-#{$i} {
+    order: $i;
+  }
+}
+
+// Responsive Order Klassen
+@each $breakpoint, $value in $breakpoints {
+  @for $i from 1 through $columns {
+    .order-#{$breakpoint}-#{$i} {
+      @media (min-width: $value) {
+        order: $i;
+      }
+    }
+  }
+}
+
+// Default Order Klassen (z. B. order-0 für Reset)
+.order-0 {
+  order: 0;
+}
+
+@each $breakpoint, $value in $breakpoints {
+  .order-#{$breakpoint}-0 {
+    @media (min-width: $value) {
+      order: 0;
+    }
+  }
+}
+
+// Display Klassen
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+// Responsive Display Klassen
+@each $breakpoint, $value in $breakpoints {
+  .d-#{$breakpoint}-none {
+    @media (min-width: $value) {
+      display: none !important;
+    }
+  }
+  .d-#{$breakpoint}-block {
+    @media (min-width: $value) {
+      display: block !important;
+    }
+  }
+  .d-#{$breakpoint}-flex {
+    @media (min-width: $value) {
+      display: flex !important;
+    }
+  }
+}

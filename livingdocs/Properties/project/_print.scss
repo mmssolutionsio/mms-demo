@@ -1,0 +1,153 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/fonts-pdf" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+
+
+
+@page {
+  margin: 30mm 20mm;
+  size: A4;
+  position:relative;
+
+  @top-center{
+    content: "";
+    border-bottom:  0.5px solid #000000;
+    left:20mm;
+    width:calc(100% - 40mm);
+    position:absolute;
+    height: 15mm;
+  }
+  @top-right {
+    content: counter(page);
+    margin-bottom: 10mm;
+    color: #000;
+    font-family: $font-family-league-spartan;
+    @include font-style-print(table);
+    font-weight: 600;
+  }
+
+  @top-left {
+    content: 'Integrated Annual Report 2029';
+    margin-bottom: 10mm;
+    color: #000;
+    font-family: $font-family-league-spartan;
+    @include font-style-print(table);
+  }
+}
+
+
+/* Cover-Seite ohne Rand */
+@page srlpPdfCoverPage {
+  margin: 0;
+  size: A4;
+  @top-right {
+    content: "";
+  }
+}
+
+.srl-article{
+  page-break-before: always;
+  break-before: always;
+}
+
+._text-typo-paragraph{
+  @include font-style-print(text);
+  color: $color-text;
+  font-family: $font-family-libre-baskerville;
+  font-style: normal;
+  margin: 16pt 0 !important;
+  padding:0;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}
+._text-typo-letter{
+  @include font-style-print(letter);
+  color: $color-text;
+  font-family: $font-family-libre-baskerville;
+  font-style: normal;
+  margin: 16pt 0 !important;
+  padding:0;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}
+._text-typo-quote{
+  @include font-style-print(quote);
+  font-family: $font-family-libre-baskerville;
+  font-style: italic;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}
+._text-typo-title-3{
+  @include font-style-print(h3);
+  color: $color-text;
+  font-family: $font-family-league-spartan;
+  font-style: normal;
+  margin: 16pt 0 !important;
+  padding:0;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}
+._text-typo-title-2{
+  @include font-style-print(h2);
+  color: $color-essence-orange;
+  font-family: $font-family-league-spartan;
+  font-style: normal;
+  margin: 16pt 0 !important;
+  padding:0;
+  text-transform:none;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}
+._text-typo-title-1{
+  @include font-style-print(h1);
+  color: $color-text;
+  font-family: $font-family-league-spartan;
+  font-style: normal;
+  margin: 16pt 0 !important;
+  padding:0;
+  text-transform: none;
+  &._text-color-essence-orange {
+    color: $color-essence-orange;
+  }
+  &._text-color-cream {
+    color: $color-cream;
+  }
+  &._text-color-black {
+    color: $color-black;
+  }
+}

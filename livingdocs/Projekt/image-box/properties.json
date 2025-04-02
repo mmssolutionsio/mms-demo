@@ -1,0 +1,60 @@
+{
+  "srlp-image-box": {
+    "label": "Image Position (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Left"
+      },
+      {
+        "caption": "Right",
+        "value": "_img-pos-right"
+      }
+    ]
+  },
+  "srlp-image-box-content-width-desktop": {
+    "label": "Desktop Content Width - vw (Project)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (80vw)"
+      },
+      {
+        "caption": "75vw",
+        "value": "_area-width-75"
+      },
+      {
+        "caption": "70vw",
+        "value": "_area-width-70"
+      },
+      {
+        "caption": "65vw",
+        "value": "_area-width-65"
+      },
+      {
+        "caption": "60vw",
+        "value": "_area-width-60"
+      },
+      {
+        "caption": "55vw",
+        "value": "_area-width-55"
+      },
+      {
+        "caption": "50vw",
+        "value": "_area-width-50"
+      },
+      {
+        "caption": "45vw",
+        "value": "_area-width-45"
+      },
+      {
+        "caption": "40vw",
+        "value": "_area-width-40"
+      },
+      {
+        "caption": "35vw",
+        "value": "_area-width-35"
+      }
+    ]
+  }
+}

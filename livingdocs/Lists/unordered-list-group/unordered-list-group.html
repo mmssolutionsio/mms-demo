@@ -1,0 +1,26 @@
+<script type="ld-conf">
+  {
+  	"name": "unordered-list-group",
+  	"label": "List (unordered)",
+  	"iconUrl": "https://mms-xbrl.s3.eu-central-1.amazonaws.com/design/svg/editor/icon-unordered-list.min.svg",
+  	"properties": [
+      "srlp-web-width"
+    ],
+  	"directives": {
+  		"list": {
+  			"allowedChildren": ["list-item"],
+  			"defaultComponents": {
+  				"paragraph": "list-item"
+  			},
+  			"defaultContent": [{
+  				"component": "list-item"
+  			}]
+  		}
+  	}
+  }
+</script>
+<div class="srlp-grid srl-unordered-list-group">
+  <div class="srlp-grid-child">
+    <ul data-container-label="List container" doc-container="list"></ul>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "srlp-pdf-cover-page-type": {
+    "label": "Type (Project - PDF ONLY)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (Only Image)"
+      },
+      {
+        "caption": "Essence Orange, text at bottom.",
+        "value": "_is_color_label_btn"
+      },
+      {
+        "caption": "Essence Orange, text at top.",
+        "value": "_is_color_label_top"
+      },
+      {
+        "caption": "Main cover",
+        "value": "_is_main_cover"
+      }
+    ]
+  }
+}

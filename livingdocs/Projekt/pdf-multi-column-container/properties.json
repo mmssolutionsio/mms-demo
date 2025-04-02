@@ -1,0 +1,19 @@
+{
+  "srlp-pdf-multi-column-container-count": {
+    "label": "Column Count (Project - PDF ONLY)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (2)"
+      },
+      {
+        "caption": "3 Column",
+        "value": "_is_3_columns"
+      },
+      {
+        "caption": "4 Column",
+        "value": "_is_4_columns"
+      }
+    ]
+  }
+}

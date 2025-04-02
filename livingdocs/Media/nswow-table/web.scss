@@ -1,0 +1,40 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-nswow-table {
+  margin: 16px 0;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+    tbody{
+      tr{
+        border-bottom:1px solid #A3ACB2;
+        color:#000;
+        font-family: $font-family-league-spartan;
+        font-style: normal;
+        font-weight: normal;
+        td{
+          &.head{
+
+          }
+          &.ns-horizontal-left{
+            text-align: left;
+          }
+          &.ns-horizontal-right{
+            text-align: right;
+          }
+        }
+        &.head{
+          border-top:4px solid #A3ACB2;
+          border-bottom:4px solid #000;
+          color:#000;
+          font-family: $font-family-league-spartan;
+          font-style: normal;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/fonts" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+
+
+._text-typo-paragraph{
+  @include font-style-web(text);
+  font-family: $font-family-libre-baskerville;
+  font-style: normal;
+}
+._text-typo-letter{
+  @include font-style-web(letter);
+  font-family: $font-family-libre-baskerville;
+  font-style: normal;
+}
+._text-typo-quote{
+  @include font-style-web(quote);
+  font-family: $font-family-libre-baskerville;
+  font-style: italic;
+}
+._text-typo-title-3{
+  @include font-style-web(h3);
+  font-family: $font-family-libre-baskerville;
+  font-style: normal;
+}
+._text-typo-title-2{
+  @include font-style-web(h2);
+  font-family: $font-family-league-spartan;
+  font-style: normal;
+  text-transform: uppercase;
+}
+._text-typo-title-1{
+  @include font-style-web(h1);
+  font-family: $font-family-libre-baskerville;
+  font-style: normal;
+  text-transform: uppercase;
+  @media (min-width: $break-point-master) {
+    letter-spacing: 3px;
+  }
+}

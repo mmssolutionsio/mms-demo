@@ -1,0 +1,149 @@
+//LeagueSpartan
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Bold.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Bold.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Bold.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraLight.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraLight.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraLight.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Regular.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Regular.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Regular.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Light.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Light.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Light.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Light.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Black.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Black.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Black.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Black.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Medium.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Medium.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Medium.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraBold.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraBold.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraBold.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-SemiBold.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-SemiBold.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-SemiBold.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Thin.eot');
+  src: url('/src/assets/fonts/league-spartan/LeagueSpartan-Thin.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Thin.woff2') format('woff2'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Thin.woff') format('woff'),
+  url('/src/assets/fonts/league-spartan/LeagueSpartan-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+//LibreBaskerville
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Bold.eot');
+  src: url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Bold.woff2') format('woff2'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Bold.woff') format('woff'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Regular.eot');
+  src: url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Regular.woff') format('woff'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Italic.eot');
+  src: url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Italic.woff2') format('woff2'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Italic.woff') format('woff'),
+  url('/src/assets/fonts/libre-baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+

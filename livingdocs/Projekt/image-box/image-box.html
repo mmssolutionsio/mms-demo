@@ -1,0 +1,70 @@
+<script type="ld-conf">
+  {
+      "name": "image-box",
+      "label": "Image Box",
+      "properties": [
+        "srlp-background-class",
+        "srlp-image-box",
+        "srlp-image-box-content-width-desktop"
+      ],
+      "directives": {
+          "title-container": {
+              "allowedChildren": [
+                  "title-h2"
+              ],
+              "defaultComponents": {
+                  "paragraph": "title-h2"
+              },
+              "defaultContent": [
+                  {
+                      "component": "title-h2"
+                  }
+              ]
+          },
+          "content-container": {
+              "allowedChildren": [
+                  "paragraph"
+              ],
+              "defaultComponents": {
+                  "paragraph": "paragraph"
+              },
+              "defaultContent": [
+                  {
+                      "component": "paragraph"
+                  }
+              ]
+          },
+          "cta-container": {
+              "allowedChildren": [
+                  "button-container"
+              ],
+              "defaultComponents": {
+                  "button-container": "button-container"
+              },
+              "defaultContent": [
+                  {
+                      "component": "button-container"
+                  }
+              ]
+          },
+          "image": {
+              "imageRatios": [
+                  "imagebox"
+              ],
+              "allowOriginalRatio": true
+          }
+      }
+  }
+</script>
+<div class="srlp-component-holder">
+  <div class="srlp-image-box">
+    <div class="srlp-image-box__image-container">
+      <img class="srlp-image-box__image" doc-image="image">
+    </div>
+    <div class="srlp-image-box__title-container" doc-container="title-container"></div>
+    <div class="srlp-image-box__content-container" doc-container="content-container"></div>
+    <div class="srlp-image-box__content-cta" doc-container="cta-container"></div>
+  </div>
+
+</div>
+

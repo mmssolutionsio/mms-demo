@@ -1,0 +1,15 @@
+{
+  "srlp-pdf-marginal-columns-position": {
+    "label": "Position (Project - PDF ONLY)",
+    "type": "select",
+    "options": [
+      {
+        "caption": "Default (Left)"
+      },
+      {
+        "caption": "Marginal Right",
+        "value": "_is_marginal_right"
+      }
+    ]
+  }
+}

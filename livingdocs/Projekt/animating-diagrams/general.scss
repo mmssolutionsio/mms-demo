@@ -1,0 +1,83 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/reset" as *;
+@use "/src/assets/scss/user-style/fonts" as *;
+@use "/src/assets/scss/user-style/grid" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+@use "/src/assets/scss/user-style/user-style" as *;
+
+.srlp-animating-diagrams {
+
+  .diagram-rows {
+    .diagram-col {
+      background: $color-background-1;
+      border-radius: $space-xs $space-xs 0 0;
+      height: 350px;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .value-area {
+        background: $color-essence-orange;
+        border-radius: $space-xs $space-xs 0 0;
+        padding: $space-s;
+        height: 49%;
+        color: $color-background-2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .diagram-label {
+          display: flex;
+          align-self: flex-start;
+          height: 100%;
+        }
+        .diagram-value {
+          display: flex;
+
+        }
+      }
+      &:nth-of-type(2) {
+        .value-area {
+          height: 64%;
+        }
+      }
+      &:nth-of-type(3) {
+        .value-area {
+          height: 78%;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin srlp-animating-diagrams($columns, $gutter: 20px) {
+  .srlp-animating-diagrams {
+    .diagram-rows {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: $gutter;
+      flex-direction: row;
+      justify-content:space-between;
+    }
+    @for $i from 1 through 12 {
+      &._col-#{$i} {
+        .diagram-rows{
+          .diagram-col {
+            display: none;
+          }
+
+          @for $j from 1 through $i {
+            .diagram-col-#{$j} {
+              display: flex;
+              flex: 1 1 calc((100% - (($i - 1) * $gutter)) / $i);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include srlp-animating-diagrams(12, 15px);
+

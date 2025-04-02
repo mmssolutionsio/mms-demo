@@ -1,0 +1,7 @@
+@use 'nswow';
+
+.srl-signature-container {
+  &__inner {
+    @include nswow.grid-row();
+  }
+}

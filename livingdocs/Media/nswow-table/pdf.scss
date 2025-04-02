@@ -1,0 +1,10 @@
+@use 'nswow';
+@use 'print';
+.srl-nswow-table{
+  tr {
+    &[class*='pagebreak'] {
+      break-after: always;
+    }
+  }
+}
+

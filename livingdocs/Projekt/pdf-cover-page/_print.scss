@@ -1,0 +1,51 @@
+@use "nswow";
+
+.srlp-pdf-cover-page{
+  height: 297mm;
+  width: 210mm;
+  ._main_cover_and_image{
+    height: 297mm;
+    width: 210mm;
+    ._background{
+      height: 297mm;
+      width: 210mm;
+    }
+    ._text_1{}
+    ._text_2{}
+    ._logo{}
+  }
+  ._label_top{}
+  ._label_btn{}
+  &._is_color_label_top{
+    ._label_top{
+      ._text_3{}
+    }
+  }
+  &._is_color_label_btn{
+    ._label_btn{
+      height: 297mm;
+      width: 210mm;
+      ._text_3{
+        text-align:right;
+      }
+    }
+  }
+  &._is_main_cover{
+    ._main_cover_and_image{
+      ._background{}
+      ._logo-top{
+        padding:5mm 0 0 5mm;
+      }
+      ._logo{
+        img{
+          max-width:70mm;
+          position:absolute;
+          bottom:0;
+          left:50%;
+          margin-left:-35mm;
+          padding-bottom:5mm;
+        }
+      }
+    }
+  }
+}
