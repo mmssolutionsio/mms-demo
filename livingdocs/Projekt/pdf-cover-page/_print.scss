@@ -34,7 +34,10 @@
     ._main_cover_and_image{
       ._background{}
       ._logo-top{
-        padding:5mm 0 0 5mm;
+        padding:10mm 0 0 10mm;
+        img{
+          width: 80%;
+        }
       }
       ._logo{
         img{
@@ -43,7 +46,7 @@
           bottom:0;
           left:50%;
           margin-left:-35mm;
-          padding-bottom:5mm;
+          padding-bottom:10mm;
         }
       }
     }
