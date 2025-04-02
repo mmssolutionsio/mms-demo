@@ -2,6 +2,6 @@
 
 .srl-signature-container {
   &__inner {
-    @include nswow.grid-row();
+    display: flex;
   }
 }

@@ -1,0 +1,10 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-signature-item {
+  margin-bottom: 5pt;
+  gap: 5pt;
+  &__name,
+  &__position{
+    @include font-style-print(text);
+  }
+}

@@ -1,12 +1,8 @@
 @use "/src/assets/scss/user-style/variables" as *;
 @use "/src/assets/scss/user-style/mixins" as *;
 .srl-signature-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
   &__image {
     width: 100%;
     height: 120px;
@@ -15,16 +11,13 @@
     justify-content: center;
     &__img {
       max-height: 100%;
-      max-width: 70%;
+      max-width: 100%;
       object-fit: contain;
     }
 
   }
   &__name,
   &__position{
-    color: $color-text;
-    font-family: $font-family-libre-baskerville;
-    font-style: normal;
-    padding:0;
+    @include font-style-web(text);
   }
 }
