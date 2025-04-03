@@ -1,5 +1,5 @@
 @use 'nswow';
-@use 'print';
+@use '_print';
 .srl-nswow-table{
   tr {
     &[class*='pagebreak'] {
