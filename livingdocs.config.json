@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.37",
+  "version": "2.0.38",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -223,6 +223,19 @@
         }
       ]
     },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
+        }
+      ]
+    },
     "srlp-pdf-cover-page-type": {
       "label": "Type (Project - PDF ONLY)",
       "type": "select",
@@ -241,77 +254,6 @@
         {
           "caption": "Main cover",
           "value": "_is_main_cover"
-        }
-      ]
-    },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
-        }
-      ]
-    },
-    "srlp-image-box": {
-      "label": "Image Position (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Left"
-        },
-        {
-          "caption": "Right",
-          "value": "_img-pos-right"
-        }
-      ]
-    },
-    "srlp-image-box-content-width-desktop": {
-      "label": "Desktop Content Width - vw (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (80vw)"
-        },
-        {
-          "caption": "75vw",
-          "value": "_area-width-75"
-        },
-        {
-          "caption": "70vw",
-          "value": "_area-width-70"
-        },
-        {
-          "caption": "65vw",
-          "value": "_area-width-65"
-        },
-        {
-          "caption": "60vw",
-          "value": "_area-width-60"
-        },
-        {
-          "caption": "55vw",
-          "value": "_area-width-55"
-        },
-        {
-          "caption": "50vw",
-          "value": "_area-width-50"
-        },
-        {
-          "caption": "45vw",
-          "value": "_area-width-45"
-        },
-        {
-          "caption": "40vw",
-          "value": "_area-width-40"
-        },
-        {
-          "caption": "35vw",
-          "value": "_area-width-35"
         }
       ]
     },
@@ -406,6 +348,64 @@
         {
           "caption": "100%",
           "value": "_height-100"
+        }
+      ]
+    },
+    "srlp-image-box": {
+      "label": "Image Position (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Left"
+        },
+        {
+          "caption": "Right",
+          "value": "_img-pos-right"
+        }
+      ]
+    },
+    "srlp-image-box-content-width-desktop": {
+      "label": "Desktop Content Width - vw (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (80vw)"
+        },
+        {
+          "caption": "75vw",
+          "value": "_area-width-75"
+        },
+        {
+          "caption": "70vw",
+          "value": "_area-width-70"
+        },
+        {
+          "caption": "65vw",
+          "value": "_area-width-65"
+        },
+        {
+          "caption": "60vw",
+          "value": "_area-width-60"
+        },
+        {
+          "caption": "55vw",
+          "value": "_area-width-55"
+        },
+        {
+          "caption": "50vw",
+          "value": "_area-width-50"
+        },
+        {
+          "caption": "45vw",
+          "value": "_area-width-45"
+        },
+        {
+          "caption": "40vw",
+          "value": "_area-width-40"
+        },
+        {
+          "caption": "35vw",
+          "value": "_area-width-35"
         }
       ]
     },
@@ -550,23 +550,6 @@
       "type": "option",
       "value": "show-pdf-image"
     },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
-    },
     "vertical-alignment": {
       "label": "Vertical alignment",
       "type": "select",
@@ -613,6 +596,23 @@
       "label": "Switch sides",
       "type": "option",
       "value": "revert"
+    },
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
     }
   },
   "groups": [
