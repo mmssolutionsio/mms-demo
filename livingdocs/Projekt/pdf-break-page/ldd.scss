@@ -1,0 +1,14 @@
+@use "_web";
+.srlp-pdf-break-page {
+  width: 100%;
+  background: #cccccc;
+  padding: 10px;
+  margin: 15px 0;
+  &:after{
+    content:'------------------- PDF PAGE BREAKE -------------------';
+    display:block;
+    width: 100%;
+    color:#000000;
+    font-size: small;
+  }
+}
