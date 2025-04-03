@@ -51,6 +51,161 @@
       "type": "option",
       "value": "hide-quote-characters"
     },
+    "srlp-web-width": {
+      "label": "Web width (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Template)"
+        },
+        {
+          "caption": "Text",
+          "value": "srlp-grid__text"
+        },
+        {
+          "caption": "Content",
+          "value": "srlp-grid__content"
+        },
+        {
+          "caption": "Full",
+          "value": "srlp-grid__full"
+        }
+      ]
+    },
+    "srlp-background-class": {
+      "label": "Background Color (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default"
+        },
+        {
+          "caption": "Essence Orange",
+          "value": "_bg-color-essence-orange"
+        },
+        {
+          "caption": "Cream",
+          "value": "_bg-color-cream"
+        },
+        {
+          "caption": "White",
+          "value": "_bg-color-white"
+        }
+      ]
+    },
+    "srlp-hide-in-pdf": {
+      "label": "Hide in PDF",
+      "type": "option",
+      "value": "srlp-hide-in-pdf"
+    },
+    "srlp-btn-class": {
+      "label": "button Style (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default"
+        },
+        {
+          "caption": "Essence Orange",
+          "value": "_btn-color-essence-orange"
+        },
+        {
+          "caption": "Cream",
+          "value": "_btn-color-cream"
+        },
+        {
+          "caption": "Black",
+          "value": "_btn-color-black"
+        }
+      ]
+    },
+    "srlp-text-color-class": {
+      "label": "Text Color (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default"
+        },
+        {
+          "caption": "Essence Orange",
+          "value": "_text-color-essence-orange"
+        },
+        {
+          "caption": "Cream",
+          "value": "_text-color-cream"
+        },
+        {
+          "caption": "Black",
+          "value": "_text-color-black"
+        }
+      ]
+    },
+    "srlp-text-style-class": {
+      "label": "Appearance (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Template code styles)"
+        },
+        {
+          "caption": "Outline Style Small Strong Mix (WEB ONLY)",
+          "value": "_text-typo-outline-small-strong-mix"
+        },
+        {
+          "caption": "Outline Style Small (WEB ONLY)",
+          "value": "_text-typo-outline-small"
+        },
+        {
+          "caption": "Outline Style Big (WEB ONLY)",
+          "value": "_text-typo-outline-big"
+        },
+        {
+          "caption": "Title 1",
+          "value": "_text-typo-title-1"
+        },
+        {
+          "caption": "Title 2",
+          "value": "_text-typo-title-2"
+        },
+        {
+          "caption": "Title 3",
+          "value": "_text-typo-title-3"
+        },
+        {
+          "caption": "Quote",
+          "value": "_text-typo-quote"
+        },
+        {
+          "caption": "Letter",
+          "value": "_text-typo-letter"
+        },
+        {
+          "caption": "Paragraph",
+          "value": "_text-typo-paragraph"
+        },
+        {
+          "caption": "Image Description",
+          "value": "_text-typo-image-description"
+        },
+        {
+          "caption": "Link",
+          "value": "_text-typo-link"
+        }
+      ]
+    },
+    "srlp-pdf-break-colum": {
+      "label": "Break Column (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "NO"
+        },
+        {
+          "caption": "Yes",
+          "value": "_pdf_break_colum"
+        }
+      ]
+    },
     "srlp-pdf-multi-column-container-count": {
       "label": "Column Count (Project - PDF ONLY)",
       "type": "select",
@@ -65,19 +220,6 @@
         {
           "caption": "4 Column",
           "value": "_is_4_columns"
-        }
-      ]
-    },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
         }
       ]
     },
@@ -99,6 +241,77 @@
         {
           "caption": "Main cover",
           "value": "_is_main_cover"
+        }
+      ]
+    },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
+        }
+      ]
+    },
+    "srlp-image-box": {
+      "label": "Image Position (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Left"
+        },
+        {
+          "caption": "Right",
+          "value": "_img-pos-right"
+        }
+      ]
+    },
+    "srlp-image-box-content-width-desktop": {
+      "label": "Desktop Content Width - vw (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (80vw)"
+        },
+        {
+          "caption": "75vw",
+          "value": "_area-width-75"
+        },
+        {
+          "caption": "70vw",
+          "value": "_area-width-70"
+        },
+        {
+          "caption": "65vw",
+          "value": "_area-width-65"
+        },
+        {
+          "caption": "60vw",
+          "value": "_area-width-60"
+        },
+        {
+          "caption": "55vw",
+          "value": "_area-width-55"
+        },
+        {
+          "caption": "50vw",
+          "value": "_area-width-50"
+        },
+        {
+          "caption": "45vw",
+          "value": "_area-width-45"
+        },
+        {
+          "caption": "40vw",
+          "value": "_area-width-40"
+        },
+        {
+          "caption": "35vw",
+          "value": "_area-width-35"
         }
       ]
     },
@@ -270,64 +483,6 @@
         }
       ]
     },
-    "srlp-image-box": {
-      "label": "Image Position (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Left"
-        },
-        {
-          "caption": "Right",
-          "value": "_img-pos-right"
-        }
-      ]
-    },
-    "srlp-image-box-content-width-desktop": {
-      "label": "Desktop Content Width - vw (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (80vw)"
-        },
-        {
-          "caption": "75vw",
-          "value": "_area-width-75"
-        },
-        {
-          "caption": "70vw",
-          "value": "_area-width-70"
-        },
-        {
-          "caption": "65vw",
-          "value": "_area-width-65"
-        },
-        {
-          "caption": "60vw",
-          "value": "_area-width-60"
-        },
-        {
-          "caption": "55vw",
-          "value": "_area-width-55"
-        },
-        {
-          "caption": "50vw",
-          "value": "_area-width-50"
-        },
-        {
-          "caption": "45vw",
-          "value": "_area-width-45"
-        },
-        {
-          "caption": "40vw",
-          "value": "_area-width-40"
-        },
-        {
-          "caption": "35vw",
-          "value": "_area-width-35"
-        }
-      ]
-    },
     "srlp-animating-diagrams-columns": {
       "label": "Columns Count (Project)",
       "type": "select",
@@ -385,161 +540,6 @@
         }
       ]
     },
-    "srlp-web-width": {
-      "label": "Web width (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Template)"
-        },
-        {
-          "caption": "Text",
-          "value": "srlp-grid__text"
-        },
-        {
-          "caption": "Content",
-          "value": "srlp-grid__content"
-        },
-        {
-          "caption": "Full",
-          "value": "srlp-grid__full"
-        }
-      ]
-    },
-    "srlp-background-class": {
-      "label": "Background Color (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default"
-        },
-        {
-          "caption": "Essence Orange",
-          "value": "_bg-color-essence-orange"
-        },
-        {
-          "caption": "Cream",
-          "value": "_bg-color-cream"
-        },
-        {
-          "caption": "White",
-          "value": "_bg-color-white"
-        }
-      ]
-    },
-    "srlp-hide-in-pdf": {
-      "label": "Hide in PDF",
-      "type": "option",
-      "value": "srlp-hide-in-pdf"
-    },
-    "srlp-btn-class": {
-      "label": "button Style (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default"
-        },
-        {
-          "caption": "Essence Orange",
-          "value": "_btn-color-essence-orange"
-        },
-        {
-          "caption": "Cream",
-          "value": "_btn-color-cream"
-        },
-        {
-          "caption": "Black",
-          "value": "_btn-color-black"
-        }
-      ]
-    },
-    "srlp-text-color-class": {
-      "label": "Text Color (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default"
-        },
-        {
-          "caption": "Essence Orange",
-          "value": "_text-color-essence-orange"
-        },
-        {
-          "caption": "Cream",
-          "value": "_text-color-cream"
-        },
-        {
-          "caption": "Black",
-          "value": "_text-color-black"
-        }
-      ]
-    },
-    "srlp-text-style-class": {
-      "label": "Appearance (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Template code styles)"
-        },
-        {
-          "caption": "Outline Style Small Strong Mix (WEB ONLY)",
-          "value": "_text-typo-outline-small-strong-mix"
-        },
-        {
-          "caption": "Outline Style Small (WEB ONLY)",
-          "value": "_text-typo-outline-small"
-        },
-        {
-          "caption": "Outline Style Big (WEB ONLY)",
-          "value": "_text-typo-outline-big"
-        },
-        {
-          "caption": "Title 1",
-          "value": "_text-typo-title-1"
-        },
-        {
-          "caption": "Title 2",
-          "value": "_text-typo-title-2"
-        },
-        {
-          "caption": "Title 3",
-          "value": "_text-typo-title-3"
-        },
-        {
-          "caption": "Quote",
-          "value": "_text-typo-quote"
-        },
-        {
-          "caption": "Letter",
-          "value": "_text-typo-letter"
-        },
-        {
-          "caption": "Paragraph",
-          "value": "_text-typo-paragraph"
-        },
-        {
-          "caption": "Image Description",
-          "value": "_text-typo-image-description"
-        },
-        {
-          "caption": "Link",
-          "value": "_text-typo-link"
-        }
-      ]
-    },
-    "srlp-pdf-break-colum": {
-      "label": "Break Column (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "NO"
-        },
-        {
-          "caption": "Yes",
-          "value": "_pdf_break_colum"
-        }
-      ]
-    },
     "show-mobile-image": {
       "label": "Show mobile image",
       "type": "option",
@@ -549,6 +549,23 @@
       "label": "Show PDF image",
       "type": "option",
       "value": "show-pdf-image"
+    },
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
@@ -596,23 +613,6 @@
       "label": "Switch sides",
       "type": "option",
       "value": "revert"
-    },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
     }
   },
   "groups": [
