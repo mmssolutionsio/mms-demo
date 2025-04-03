@@ -15,6 +15,17 @@ $srlp-pdf-multi-column-container-gap: 10mm;
     width: 100%;
     display: block;
     break-inside: avoid;
+    margin:16pt 0 0 0;
+    &:after {
+      content:'';
+      break-inside: avoid;
+      height: 16pt;
+      display: block;
+      width: 100%;
+    }
+    + *{
+      margin:0 !important;
+    }
   }
   > *:first-child{
     margin-top:0 !important;
