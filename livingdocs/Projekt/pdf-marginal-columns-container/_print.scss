@@ -1,1 +1,59 @@
-@use "nswow";
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+
+
+
+//$marginal-width: (200 / 96) * 1in;
+$marginal-width: px-to-pt(200);
+
+
+
+
+.srlp-pdf-marginal-columns{
+  ._section-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10pt;
+    gap: 0 10pt;
+    row-gap: 10pt;
+    column-gap: 10pt;
+    ._section-col-left{
+      display: block;
+      max-width: $marginal-width;
+      min-width: $marginal-width;
+      width: $marginal-width;
+      break-inside: auto;
+      *{
+        margin: 0;
+        padding: 0;
+        break-inside: auto;
+      }
+    }
+    ._section-col-right{
+      display: block;
+      width: calc(100% - $marginal-width);
+      break-inside: auto;
+      *{
+        margin: 0;
+        padding: 0;
+        break-inside: auto;
+      }
+    }
+  }
+  &._is_marginal_right{
+    ._section-row{
+      ._section-col-left{
+        width: calc(100% - $marginal-width);
+        max-width: calc(100% - $marginal-width);
+        min-width: calc(100% - $marginal-width);
+      }
+      ._section-col-right{
+        max-width: $marginal-width;
+        min-width: $marginal-width;
+        width: $marginal-width;
+      }
+    }
+  }
+}
+
+
