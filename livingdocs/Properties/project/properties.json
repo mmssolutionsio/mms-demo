@@ -95,7 +95,6 @@
       {
         "caption": "Default (Template code styles)"
       },
-
       {
         "caption": "Outline Style Small Strong Mix (WEB ONLY)",
         "value": "_text-typo-outline-small-strong-mix"
@@ -124,7 +123,6 @@
         "caption": "Quote",
         "value": "_text-typo-quote"
       },
-
       {
         "caption": "Letter",
         "value": "_text-typo-letter"
@@ -155,5 +153,5 @@
         "value": "_pdf_break_colum"
       }
     ]
-  },
-
+  }
+}

@@ -41,12 +41,22 @@
     }
   },
   "componentProperties": {
+    "round-portrait": {
+      "label": "Round portrait",
+      "type": "option",
+      "value": "round-portrait"
+    },
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
+    },
     "srlp-web-width": {
       "label": "Web width (Project)",
       "type": "select",
       "options": [
         {
-          "caption": "Default (Template)"
+          "caption": "Default (Template Set as content)"
         },
         {
           "caption": "Text",
@@ -195,6 +205,16 @@
           "value": "_pdf_break_colum"
         }
       ]
+    },
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
     },
     "srlp-pdf-multi-column-container-count": {
       "label": "Column Count (Project - PDF ONLY)",
@@ -530,25 +550,22 @@
         }
       ]
     },
-    "show-mobile-image": {
-      "label": "Show mobile image",
-      "type": "option",
-      "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
-    },
-    "round-portrait": {
-      "label": "Round portrait",
-      "type": "option",
-      "value": "round-portrait"
-    },
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
@@ -596,23 +613,6 @@
       "label": "Switch sides",
       "type": "option",
       "value": "revert"
-    },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
     }
   },
   "groups": [
