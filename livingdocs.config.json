@@ -41,423 +41,15 @@
     }
   },
   "componentProperties": {
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
-    },
-    "srlp-pdf-multi-column-container-count": {
-      "label": "Column Count (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (2)"
-        },
-        {
-          "caption": "3 Column",
-          "value": "_is_3_columns"
-        },
-        {
-          "caption": "4 Column",
-          "value": "_is_4_columns"
-        }
-      ]
-    },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
-        }
-      ]
-    },
-    "srlp-pdf-cover-page-type": {
-      "label": "Type (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Only Image)"
-        },
-        {
-          "caption": "Essence Orange, text at bottom.",
-          "value": "_is_color_label_btn"
-        },
-        {
-          "caption": "Essence Orange, text at top.",
-          "value": "_is_color_label_top"
-        },
-        {
-          "caption": "Main cover",
-          "value": "_is_main_cover"
-        }
-      ]
-    },
     "round-portrait": {
       "label": "Round portrait",
       "type": "option",
       "value": "round-portrait"
     },
-    "srlp-image-container-hero": {
-      "label": "type of element (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Image Text"
-        },
-        {
-          "caption": "Herro",
-          "value": "_is-hero-element"
-        }
-      ]
-    },
-    "srlp-image-container-height": {
-      "label": "Height of element (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "default (50%)"
-        },
-        {
-          "caption": "10%",
-          "value": "_height-10"
-        },
-        {
-          "caption": "15%",
-          "value": "_height-10"
-        },
-        {
-          "caption": "20%",
-          "value": "_height-20"
-        },
-        {
-          "caption": "25%",
-          "value": "_height-25"
-        },
-        {
-          "caption": "30%",
-          "value": "_height-30"
-        },
-        {
-          "caption": "35%",
-          "value": "_height-35"
-        },
-        {
-          "caption": "40%",
-          "value": "_height-40"
-        },
-        {
-          "caption": "45%",
-          "value": "_height-45"
-        },
-        {
-          "caption": "55%",
-          "value": "_height-55"
-        },
-        {
-          "caption": "60%",
-          "value": "_height-60"
-        },
-        {
-          "caption": "65%",
-          "value": "_height-65"
-        },
-        {
-          "caption": "70%",
-          "value": "_height-70"
-        },
-        {
-          "caption": "75%",
-          "value": "_height-75"
-        },
-        {
-          "caption": "80%",
-          "value": "_height-80"
-        },
-        {
-          "caption": "85%",
-          "value": "_height-85"
-        },
-        {
-          "caption": "90%",
-          "value": "_height-90"
-        },
-        {
-          "caption": "95%",
-          "value": "_height-95"
-        },
-        {
-          "caption": "100%",
-          "value": "_height-100"
-        }
-      ]
-    },
-    "srlp-gap-desktop-class": {
-      "label": "Gap Desktop (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Template code styles)"
-        },
-        {
-          "caption": "XXXL 256px",
-          "value": "_gap-desktop-xxxl"
-        },
-        {
-          "caption": "XXL 128px",
-          "value": "_gap-desktop-xxl"
-        },
-        {
-          "caption": "XL 64px",
-          "value": "_gap-desktop-xl"
-        },
-        {
-          "caption": "L 32px",
-          "value": "_gap-desktop-l"
-        },
-        {
-          "caption": "M 16px",
-          "value": "_gap-desktop-m"
-        },
-        {
-          "caption": "S 8px",
-          "value": "_gap-desktop-s"
-        },
-        {
-          "caption": "XS 4px",
-          "value": "_gap-desktop-xs"
-        }
-      ]
-    },
-    "srlp-gap-mobil-class": {
-      "label": "Gap Mobil (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Template code styles)"
-        },
-        {
-          "caption": "XXXL 256px",
-          "value": "_gap-mobil-xxxl"
-        },
-        {
-          "caption": "XXL 128px",
-          "value": "_gap-mobil-xxl"
-        },
-        {
-          "caption": "XL 64px",
-          "value": "_gap-mobil-xl"
-        },
-        {
-          "caption": "L 32px",
-          "value": "_gap-mobil-l"
-        },
-        {
-          "caption": "M 16px",
-          "value": "_gap-mobil-m"
-        },
-        {
-          "caption": "S 8px",
-          "value": "_gap-mobil-s"
-        },
-        {
-          "caption": "XS 4px",
-          "value": "_gap-mobil-xs"
-        }
-      ]
-    },
-    "srlp-animating-diagrams-columns": {
-      "label": "Columns Count (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (12 Columns)"
-        },
-        {
-          "caption": "1 Column",
-          "value": "_col-1"
-        },
-        {
-          "caption": "2 Columns",
-          "value": "_col-2"
-        },
-        {
-          "caption": "3 Columns",
-          "value": "_col-3"
-        },
-        {
-          "caption": "4 Columns",
-          "value": "_col-4"
-        },
-        {
-          "caption": "5 Columns",
-          "value": "_col-5"
-        },
-        {
-          "caption": "6 Columns",
-          "value": "_col-6"
-        },
-        {
-          "caption": "7 Columns",
-          "value": "_col-7"
-        },
-        {
-          "caption": "8 Columns",
-          "value": "_col-8"
-        },
-        {
-          "caption": "9 Columns",
-          "value": "_col-9"
-        },
-        {
-          "caption": "10 Columns",
-          "value": "_col-10"
-        },
-        {
-          "caption": "11 Columns",
-          "value": "_col-11"
-        },
-        {
-          "caption": "12 Columns",
-          "value": "_col-12"
-        }
-      ]
-    },
-    "srlp-image-box": {
-      "label": "Image Position (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Left"
-        },
-        {
-          "caption": "Right",
-          "value": "_img-pos-right"
-        }
-      ]
-    },
-    "srlp-image-box-content-width-desktop": {
-      "label": "Desktop Content Width - vw (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (80vw)"
-        },
-        {
-          "caption": "75vw",
-          "value": "_area-width-75"
-        },
-        {
-          "caption": "70vw",
-          "value": "_area-width-70"
-        },
-        {
-          "caption": "65vw",
-          "value": "_area-width-65"
-        },
-        {
-          "caption": "60vw",
-          "value": "_area-width-60"
-        },
-        {
-          "caption": "55vw",
-          "value": "_area-width-55"
-        },
-        {
-          "caption": "50vw",
-          "value": "_area-width-50"
-        },
-        {
-          "caption": "45vw",
-          "value": "_area-width-45"
-        },
-        {
-          "caption": "40vw",
-          "value": "_area-width-40"
-        },
-        {
-          "caption": "35vw",
-          "value": "_area-width-35"
-        }
-      ]
-    },
-    "show-mobile-image": {
-      "label": "Show mobile image",
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
       "type": "option",
-      "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
-    },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
-    },
-    "vertical-alignment": {
-      "label": "Vertical alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "top"
-        },
-        {
-          "caption": "center",
-          "value": "vertical-center"
-        },
-        {
-          "caption": "bottom",
-          "value": "vertical-bottom"
-        }
-      ]
-    },
-    "columns": {
-      "label": "Columns",
-      "type": "select",
-      "options": [
-        {
-          "caption": "1/2 1/2"
-        },
-        {
-          "caption": "1/3 2/3",
-          "value": "srl-columns--1-2"
-        },
-        {
-          "caption": "2/3 1/3",
-          "value": "srl-columns--2-1"
-        },
-        {
-          "caption": "1/3 1/3 1/3",
-          "value": "srl-columns--3"
-        },
-        {
-          "caption": "1/4 1/4 1/4 1/4",
-          "value": "srl-columns--4"
-        }
-      ]
-    },
-    "revert": {
-      "label": "Switch sides",
-      "type": "option",
-      "value": "revert"
+      "value": "hide-quote-characters"
     },
     "srlp-web-width": {
       "label": "Web width (Project)",
@@ -613,6 +205,414 @@
           "value": "_pdf_break_colum"
         }
       ]
+    },
+    "srlp-pdf-multi-column-container-count": {
+      "label": "Column Count (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (2)"
+        },
+        {
+          "caption": "3 Column",
+          "value": "_is_3_columns"
+        },
+        {
+          "caption": "4 Column",
+          "value": "_is_4_columns"
+        }
+      ]
+    },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
+        }
+      ]
+    },
+    "srlp-pdf-cover-page-type": {
+      "label": "Type (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Only Image)"
+        },
+        {
+          "caption": "Essence Orange, text at bottom.",
+          "value": "_is_color_label_btn"
+        },
+        {
+          "caption": "Essence Orange, text at top.",
+          "value": "_is_color_label_top"
+        },
+        {
+          "caption": "Main cover",
+          "value": "_is_main_cover"
+        }
+      ]
+    },
+    "srlp-image-container-hero": {
+      "label": "type of element (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Image Text"
+        },
+        {
+          "caption": "Herro",
+          "value": "_is-hero-element"
+        }
+      ]
+    },
+    "srlp-image-container-height": {
+      "label": "Height of element (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "default (50%)"
+        },
+        {
+          "caption": "10%",
+          "value": "_height-10"
+        },
+        {
+          "caption": "15%",
+          "value": "_height-10"
+        },
+        {
+          "caption": "20%",
+          "value": "_height-20"
+        },
+        {
+          "caption": "25%",
+          "value": "_height-25"
+        },
+        {
+          "caption": "30%",
+          "value": "_height-30"
+        },
+        {
+          "caption": "35%",
+          "value": "_height-35"
+        },
+        {
+          "caption": "40%",
+          "value": "_height-40"
+        },
+        {
+          "caption": "45%",
+          "value": "_height-45"
+        },
+        {
+          "caption": "55%",
+          "value": "_height-55"
+        },
+        {
+          "caption": "60%",
+          "value": "_height-60"
+        },
+        {
+          "caption": "65%",
+          "value": "_height-65"
+        },
+        {
+          "caption": "70%",
+          "value": "_height-70"
+        },
+        {
+          "caption": "75%",
+          "value": "_height-75"
+        },
+        {
+          "caption": "80%",
+          "value": "_height-80"
+        },
+        {
+          "caption": "85%",
+          "value": "_height-85"
+        },
+        {
+          "caption": "90%",
+          "value": "_height-90"
+        },
+        {
+          "caption": "95%",
+          "value": "_height-95"
+        },
+        {
+          "caption": "100%",
+          "value": "_height-100"
+        }
+      ]
+    },
+    "srlp-image-box": {
+      "label": "Image Position (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Left"
+        },
+        {
+          "caption": "Right",
+          "value": "_img-pos-right"
+        }
+      ]
+    },
+    "srlp-image-box-content-width-desktop": {
+      "label": "Desktop Content Width - vw (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (80vw)"
+        },
+        {
+          "caption": "75vw",
+          "value": "_area-width-75"
+        },
+        {
+          "caption": "70vw",
+          "value": "_area-width-70"
+        },
+        {
+          "caption": "65vw",
+          "value": "_area-width-65"
+        },
+        {
+          "caption": "60vw",
+          "value": "_area-width-60"
+        },
+        {
+          "caption": "55vw",
+          "value": "_area-width-55"
+        },
+        {
+          "caption": "50vw",
+          "value": "_area-width-50"
+        },
+        {
+          "caption": "45vw",
+          "value": "_area-width-45"
+        },
+        {
+          "caption": "40vw",
+          "value": "_area-width-40"
+        },
+        {
+          "caption": "35vw",
+          "value": "_area-width-35"
+        }
+      ]
+    },
+    "srlp-gap-desktop-class": {
+      "label": "Gap Desktop (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Template code styles)"
+        },
+        {
+          "caption": "XXXL 256px",
+          "value": "_gap-desktop-xxxl"
+        },
+        {
+          "caption": "XXL 128px",
+          "value": "_gap-desktop-xxl"
+        },
+        {
+          "caption": "XL 64px",
+          "value": "_gap-desktop-xl"
+        },
+        {
+          "caption": "L 32px",
+          "value": "_gap-desktop-l"
+        },
+        {
+          "caption": "M 16px",
+          "value": "_gap-desktop-m"
+        },
+        {
+          "caption": "S 8px",
+          "value": "_gap-desktop-s"
+        },
+        {
+          "caption": "XS 4px",
+          "value": "_gap-desktop-xs"
+        }
+      ]
+    },
+    "srlp-gap-mobil-class": {
+      "label": "Gap Mobil (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Template code styles)"
+        },
+        {
+          "caption": "XXXL 256px",
+          "value": "_gap-mobil-xxxl"
+        },
+        {
+          "caption": "XXL 128px",
+          "value": "_gap-mobil-xxl"
+        },
+        {
+          "caption": "XL 64px",
+          "value": "_gap-mobil-xl"
+        },
+        {
+          "caption": "L 32px",
+          "value": "_gap-mobil-l"
+        },
+        {
+          "caption": "M 16px",
+          "value": "_gap-mobil-m"
+        },
+        {
+          "caption": "S 8px",
+          "value": "_gap-mobil-s"
+        },
+        {
+          "caption": "XS 4px",
+          "value": "_gap-mobil-xs"
+        }
+      ]
+    },
+    "srlp-animating-diagrams-columns": {
+      "label": "Columns Count (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (12 Columns)"
+        },
+        {
+          "caption": "1 Column",
+          "value": "_col-1"
+        },
+        {
+          "caption": "2 Columns",
+          "value": "_col-2"
+        },
+        {
+          "caption": "3 Columns",
+          "value": "_col-3"
+        },
+        {
+          "caption": "4 Columns",
+          "value": "_col-4"
+        },
+        {
+          "caption": "5 Columns",
+          "value": "_col-5"
+        },
+        {
+          "caption": "6 Columns",
+          "value": "_col-6"
+        },
+        {
+          "caption": "7 Columns",
+          "value": "_col-7"
+        },
+        {
+          "caption": "8 Columns",
+          "value": "_col-8"
+        },
+        {
+          "caption": "9 Columns",
+          "value": "_col-9"
+        },
+        {
+          "caption": "10 Columns",
+          "value": "_col-10"
+        },
+        {
+          "caption": "11 Columns",
+          "value": "_col-11"
+        },
+        {
+          "caption": "12 Columns",
+          "value": "_col-12"
+        }
+      ]
+    },
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
+    },
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
+    },
+    "vertical-alignment": {
+      "label": "Vertical alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "top"
+        },
+        {
+          "caption": "center",
+          "value": "vertical-center"
+        },
+        {
+          "caption": "bottom",
+          "value": "vertical-bottom"
+        }
+      ]
+    },
+    "columns": {
+      "label": "Columns",
+      "type": "select",
+      "options": [
+        {
+          "caption": "1/2 1/2"
+        },
+        {
+          "caption": "1/3 2/3",
+          "value": "srl-columns--1-2"
+        },
+        {
+          "caption": "2/3 1/3",
+          "value": "srl-columns--2-1"
+        },
+        {
+          "caption": "1/3 1/3 1/3",
+          "value": "srl-columns--3"
+        },
+        {
+          "caption": "1/4 1/4 1/4 1/4",
+          "value": "srl-columns--4"
+        }
+      ]
+    },
+    "revert": {
+      "label": "Switch sides",
+      "type": "option",
+      "value": "revert"
     }
   },
   "groups": [
