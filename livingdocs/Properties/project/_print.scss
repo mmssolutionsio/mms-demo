@@ -2,8 +2,6 @@
 @use "/src/assets/scss/user-style/fonts-pdf" as *;
 @use "/src/assets/scss/user-style/mixins" as *;
 
-
-
 @page {
   margin: 30mm 20mm;
   size: A4;
@@ -34,7 +32,6 @@
     @include font-style-print(table);
   }
 }
-
 
 /* Cover-Seite ohne Rand */
 @page srlpPdfCoverPage {

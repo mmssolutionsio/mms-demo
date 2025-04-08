@@ -53,6 +53,29 @@ $breakpoints: (
         xxl: 1600px
 );
 
+@mixin srlp-grid-width($type: standard) {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @if $type == full {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  } @else {
+    max-width: map-get($container-widths, $type);
+  }
+}
+
+// Functions
+//Function pt convertor
+@function px-to-pt($px) {
+  @return $px * 0.75pt / 1;
+}
+
+
+
+// TODO CHECK IF USED
 // Mixin für Container
 @mixin container($type: "Default") {
   @if $type == "Default" {
@@ -81,7 +104,3 @@ $breakpoints: (
 }
 
 
-//Function pt convertor
-@function px-to-pt($px) {
-  @return $px * 0.75pt / 1;
-}

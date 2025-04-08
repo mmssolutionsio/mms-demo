@@ -4,7 +4,7 @@
     "type": "select",
     "options": [
       {
-        "caption": "Default (Template)"
+        "caption": "Default (Template Set as content)"
       },
       {
         "caption": "Text",
@@ -155,5 +155,5 @@
         "value": "_pdf_break_colum"
       }
     ]
-  }
-}
+  },
+

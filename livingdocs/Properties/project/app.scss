@@ -1,1 +1,19 @@
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/fonts" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
 @use "_web";
+
+.srlp-grid {
+  @include srlp-grid-width(large); // 1200px
+  &__text {
+    @include srlp-grid-width(standard); // 960px
+  }
+
+  &__content {
+    @include srlp-grid-width(large); // 1200px
+  }
+
+  &__full {
+    @include srlp-grid-width(full); // volle Breite
+  }
+}

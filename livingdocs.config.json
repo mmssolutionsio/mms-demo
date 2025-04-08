@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.42",
+  "version": "2.0.46",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -41,16 +41,6 @@
     }
   },
   "componentProperties": {
-    "round-portrait": {
-      "label": "Round portrait",
-      "type": "option",
-      "value": "round-portrait"
-    },
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
-    },
     "srlp-web-width": {
       "label": "Web width (Project)",
       "type": "select",
@@ -550,22 +540,15 @@
       "type": "option",
       "value": "show-pdf-image"
     },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
+    "round-portrait": {
+      "label": "Round portrait",
+      "type": "option",
+      "value": "round-portrait"
+    },
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
@@ -613,6 +596,23 @@
       "label": "Switch sides",
       "type": "option",
       "value": "revert"
+    },
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
     }
   },
   "groups": [
