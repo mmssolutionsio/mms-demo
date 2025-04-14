@@ -112,6 +112,15 @@ $v20250116101915-break-point: calc( 3 * $v20250116101915-image-size);
 
     }
   }
+  &._bg-color-essence-orange{
+    background: $color-essence-orange;
+  }
+  &._bg-color-cream{
+    background: $color-cream;
+  }
+  &._bg-color-white{
+    background: $color-white;
+  }
 
 }
 

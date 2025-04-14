@@ -18,6 +18,6 @@
   }
   &__name,
   &__position{
-    @include font-style-web(text);
+    @include font-style-web(small-text);
   }
 }

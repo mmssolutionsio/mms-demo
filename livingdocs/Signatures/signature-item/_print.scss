@@ -4,6 +4,6 @@
   margin:0 10pt;
   &__name,
   &__position{
-    @include font-style-print(text);
+    @include font-style-print(small-text);
   }
 }
