@@ -1,1 +1,9 @@
 @use "_web";
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-title-h1{
+  padding: 64px 0;
+  @media(min-width: $break-point-master){
+    padding: 32px 0 128px;
+  }
+}

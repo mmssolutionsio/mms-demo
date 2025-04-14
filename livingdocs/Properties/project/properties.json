@@ -46,6 +46,11 @@
     "type": "option",
     "value": "srlp-hide-in-pdf"
   },
+  "srlp-hide-in-app": {
+    "label": "Hide in WEB",
+    "type": "option",
+    "value": "srlp-hide-in-app"
+  },
   "srlp-btn-class": {
     "label": "button Style (Project)",
     "type": "select",

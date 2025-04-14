@@ -17,3 +17,6 @@
     @include srlp-grid-width(full); // volle Breite
   }
 }
+.srlp-hide-in-app{
+  display: none!important;
+}

@@ -1,1 +1,11 @@
 @use "_web";
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+.srl-paragraph{
+  padding: 48px 0;
+  @media(min-width: $break-point-master){
+    padding: 64px 0;
+  }
+}

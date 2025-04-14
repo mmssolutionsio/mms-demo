@@ -9,6 +9,10 @@
       {
         "caption": "Herro",
         "value": "_is-hero-element"
+      },
+      {
+        "caption": "Video Text",
+        "value": "_is-hero-video-element"
       }
     ]
   },

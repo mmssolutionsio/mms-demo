@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.46",
+  "version": "2.0.57",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -97,6 +97,11 @@
       "label": "Hide in PDF",
       "type": "option",
       "value": "srlp-hide-in-pdf"
+    },
+    "srlp-hide-in-app": {
+      "label": "Hide in WEB",
+      "type": "option",
+      "value": "srlp-hide-in-app"
     },
     "srlp-btn-class": {
       "label": "button Style (Project)",
@@ -206,16 +211,6 @@
         }
       ]
     },
-    "show-mobile-image": {
-      "label": "Show mobile image",
-      "type": "option",
-      "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
-    },
     "srlp-pdf-multi-column-container-count": {
       "label": "Column Count (Project - PDF ONLY)",
       "type": "select",
@@ -277,6 +272,10 @@
         {
           "caption": "Herro",
           "value": "_is-hero-element"
+        },
+        {
+          "caption": "Video Text",
+          "value": "_is-hero-video-element"
         }
       ]
     },
@@ -550,22 +549,15 @@
         }
       ]
     },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
@@ -613,6 +605,23 @@
       "label": "Switch sides",
       "type": "option",
       "value": "revert"
+    },
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
     }
   },
   "groups": [
