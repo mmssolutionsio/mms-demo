@@ -5,126 +5,85 @@
 @use "/src/assets/scss/user-style/mixins" as *;
 @use "/src/assets/scss/user-style/user-style" as *;
 
-$v20250116101915-image-size: 450px;
-$v20250116101915-break-point: calc( 3 * $v20250116101915-image-size);
-
-@mixin content-width($index) {
-  .srlp-component-holder {
-    &._area-width-#{$index} {
-
-      @media (min-width: $v20250116101915-break-point) {
-        .srlp-image-box {
-          .srlp-image-box__image-container {
-            width: calc(100vw - #{$index}vw);
-          }
-          .srlp-image-box__title-container {
-            width: #{$index}vw;
-          }
-          .srlp-image-box__content-container {
-            width: #{$index}vw;
-          }
-          .srlp-image-box__content-cta {
-            width: #{$index}vw;
-          }
-        }
-      }
-
-    }
-  }
-}
-
-.srlp-component-holder{
-  .srlp-image-box {
-    display: grid;
-    gap: 0;
-    grid-auto-flow: row;
-    grid-template-areas:
+.srlp-image-box {
+  min-height: 50vh;
+  display: grid;
+  grid-template-areas:
     "title"
     "image"
-    "description"
+    "content"
     "cta";
-    @media (min-width: $v20250116101915-break-point) {
-      grid-template-areas:
-    "image title"
-    "image description"
-    "image cta";
-    }
+  grid-template-columns: 1fr;
+  gap: 1rem;
 
-  }
-  .srlp-image-box__image-container {
-    grid-area: image;
-
-    @media (min-width: $v20250116101915-break-point){
-      width: 20vw;
-    }
-
-  }
   .srlp-image-box__title-container {
     grid-area: title;
-    text-align: center;
-    padding:$space-m $space-l  ;
-    @media (min-width: $v20250116101915-break-point) {
-      text-align: left;
-      padding:0 $space-xxl ;
-      width: 80vw;
-    }
+  }
 
+  .srlp-image-box__image-container {
+    grid-area: image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
   }
+
   .srlp-image-box__content-container {
-    grid-area: description;
-    padding:$space-m $space-l  ;
-    @media (min-width: $v20250116101915-break-point) {
-      padding:0 $space-xxl ;
-      width: 80vw;
-    }
+    grid-area: content;
   }
+
   .srlp-image-box__content-cta {
     grid-area: cta;
-
-    .srl-button-container{
-      .srl-button-container__inner{
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        gap:$space-l;
-      }
-
-    }
-    padding:$space-m $space-l  ;
-    @media (min-width: $v20250116101915-break-point) {
-      padding:0 $space-xxl ;
-      width: 80vw;
-    }
-
-  }
-  .srlp-image-box__image{
-    width: 100%;
   }
 
+  @media screen and (min-width: $break-point-master) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image title"
+      "image content"
+      "image cta";
+
+    .srlp-image-box__image-container {
+      width: 100%; // nimmt die linke Spalte komplett ein
+    }
+
+    .srlp-image-box__title-container,
+    .srlp-image-box__content-container,
+    .srlp-image-box__content-cta {
+      width: 100%;
+    }
+  }
   &._img-pos-right{
-    .srlp-image-box {
-      @media (min-width: $v20250116101915-break-point) {
-        grid-template-areas:
-    "title image"
-    "description image"
-    "cta image";
-      }
-
+    @media screen and (min-width: $break-point-master){
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "title image"
+      "content image"
+      "cta image";
     }
-  }
-  &._bg-color-essence-orange{
-    background: $color-essence-orange;
   }
   &._bg-color-cream{
     background: $color-cream;
   }
+  &._bg-color-essence-orange{
+    background: $color-essence-orange;
+  }
   &._bg-color-white{
     background: $color-white;
   }
-
 }
 
-@each $i in (50, 60, 70, 80) {
-  @include content-width($i);
+@mixin dynamic-height-image-box($max: 100) {
+  @for $i from 10 through $max {
+    .srlp-image-box._height-#{$i} {
+      min-height: #{$i}vh;
+    }
+    .srlp-image-box._height-#{$i} .srlp-image-box__image-container {
+      min-height: #{$i}vh;
+    }
+  }
 }
+
+@include dynamic-height-image-box(100);
+
 
