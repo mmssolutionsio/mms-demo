@@ -1,5 +1,5 @@
 @use "@multivisio/nswow/scss/system/variables.scss" as systemVariables with (
-  $environment: production
+  $environment: development
 );
 
 @use "@multivisio/nswow/scss/fonts/variables.scss" as fontsVariables with (

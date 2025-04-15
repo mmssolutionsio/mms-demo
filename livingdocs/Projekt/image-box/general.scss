@@ -57,6 +57,9 @@
     .srlp-image-box__content-container,
     .srlp-image-box__content-cta {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; // zentriert vertikal
     }
   }
   &._img-pos-right{
