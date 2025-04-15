@@ -1,5 +1,5 @@
-@use "/src/assets/scss/user-style/variables" as *;
 
+@use "/src/assets/scss/user-style/variables" as *;
 @mixin srl-columns-layout($gutter: 20px, $breakpoint: $break-point-master) {
   .srl-columns {
     .srl-columns__grid {
@@ -12,10 +12,19 @@
         flex: 1 1 100%;
         max-width: 100%;
         flex-direction: column;
+        @media (min-width: $breakpoint) {
+          flex: 0 0 calc((100% - $gutter) * 0.5);
+          max-width: calc((100% - $gutter) * 0.5);
+          &:nth-child(3),
+          &:nth-child(4){
+            display: none;
+          }
+        }
       }
     }
 
     @media (min-width: $breakpoint) {
+
       &.srl-columns--1-2,
       &.srl-columns--2-1 {
         .srl-columns__column {
@@ -53,15 +62,27 @@
 
       &.srl-columns--3 {
         .srl-columns__column {
+          display: flex;
           flex: 0 0 calc((100% - 2 * $gutter) / 3);
           max-width: calc((100% - 2 * $gutter) / 3);
+          &:nth-child(3){
+            display: flex;
+          }
+          &:nth-child(4){
+            display: none;
+          }
         }
       }
 
       &.srl-columns--4 {
         .srl-columns__column {
+          display: flex;
           flex: 0 0 calc((100% - 3 * $gutter) / 4);
           max-width: calc((100% - 3 * $gutter) / 4);
+          &:nth-child(3),
+          &:nth-child(4){
+            display: flex;
+          }
         }
       }
     }
