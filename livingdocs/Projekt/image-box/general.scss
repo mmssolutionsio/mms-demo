@@ -14,7 +14,6 @@
     "content"
     "cta";
   grid-template-columns: 1fr;
-  gap: 1rem;
 
   .srlp-image-box__title-container {
     grid-area: title;
@@ -51,6 +50,7 @@
       "image title"
       "image content"
       "image cta";
+    gap: 1rem;
 
     .srlp-image-box__image-container {
       width: 100%; // nimmt die linke Spalte komplett ein
