@@ -1,5 +1,20 @@
 @use "nswow";
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/reset" as *;
+@use "/src/assets/scss/user-style/fonts" as *;
+@use "/src/assets/scss/user-style/grid" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+@use "/src/assets/scss/user-style/user-style" as *;
 
-.srl-expanded-containers {
+.srlp-expanded-containers {
+  &._bg-color-essence-orange{
+    background-color:$color-essence-orange;
+  }
+  &._bg-color-cream{
+    background-color:$color-cream;
+  }
+  &._bg-color-white{
+    background-color:$color-white;
+  }
 
 }
