@@ -61,26 +61,26 @@ $font-family-libre-baskerville: "Libre Baskerville", Sans-serif;
 //font-size
 $font-styles: (
         desktop: (
-                h1: (font-size: 100px, line-height: 110px , font-weight: 600, strong-weight: 700),
-                h2: (font-size: 64px, line-height: normal , font-weight: 600, strong-weight: 700),
-                h3: (font-size: 48px, line-height: normal , font-weight: 500, strong-weight: 700),
-                letter: (font-size: 35px, line-height: normal , font-weight: 400, strong-weight: 700),
-                text: (font-size: 30px, line-height: normal , font-weight: 400, strong-weight: 700),
-                small-text: (font-size: 20px, line-height: normal , font-weight: 400, strong-weight: 700),
-                table: (font-size: 25px, line-height: normal , font-weight: 400, strong-weight: 700),
-                list: (font-size: 30px, line-height: normal , font-weight: 400, strong-weight: 700),
-                quote: (font-size: 40px, line-height: normal , font-weight: 400, strong-weight: 700),
+                h1: (font-size: 45px, line-height: 50px , font-weight: 600, strong-weight: 700),
+                h2: (font-size: 35px, line-height: normal , font-weight: 600, strong-weight: 700),
+                h3: (font-size: 25px, line-height: normal , font-weight: 500, strong-weight: 700),
+                letter: (font-size: 20px, line-height: normal , font-weight: 400, strong-weight: 700),
+                text: (font-size: 18px, line-height: normal , font-weight: 400, strong-weight: 700),
+                small-text: (font-size: 14px, line-height: normal , font-weight: 400, strong-weight: 700),
+                table: (font-size: 18px, line-height: normal , font-weight: 400, strong-weight: 700),
+                list: (font-size: 18px, line-height: normal , font-weight: 400, strong-weight: 700),
+                quote: (font-size: 18px, line-height: normal , font-weight: 400, strong-weight: 700),
         ),
         mobile: (
-                h1: (font-size: 40px, line-height: normal , font-weight: 700, strong-weight: 700),
-                h2: (font-size: 38px, line-height: normal , font-weight: 600, strong-weight: 700),
-                h3: (font-size: 30px, line-height: normal , font-weight: 500 , strong-weight: 700),
-                letter: (font-size: 25px, line-height: normal , font-weight: 400, strong-weight: 700),
-                text: (font-size: 20px, line-height: normal , font-weight: 400, strong-weight: 700),
-                small-text: (font-size: 20px, line-height: normal , font-weight: 400, strong-weight: 700),
+                h1: (font-size: 30px, line-height: normal , font-weight: 700, strong-weight: 700),
+                h2: (font-size: 25px, line-height: normal , font-weight: 600, strong-weight: 700),
+                h3: (font-size: 22px, line-height: normal , font-weight: 500 , strong-weight: 700),
+                letter: (font-size: 18px, line-height: normal , font-weight: 400, strong-weight: 700),
+                text: (font-size: 16px, line-height: normal , font-weight: 400, strong-weight: 700),
+                small-text: (font-size: 14px, line-height: normal , font-weight: 400, strong-weight: 700),
                 table: (font-size: 16px, line-height: normal , font-weight: 400, strong-weight: 700),
-                list: (font-size: 20px, line-height: normal , font-weight: 400, strong-weight: 700),
-                quote: (font-size: 24px, line-height: normal , font-weight: 400, strong-weight: 700),
+                list: (font-size: 16px, line-height: normal , font-weight: 400, strong-weight: 700),
+                quote: (font-size: 16px, line-height: normal , font-weight: 400, strong-weight: 700),
         ),
         print: (
                 h1: (font-size: 30pt, line-height: 36pt, font-weight: 500, strong-weight: 700),
@@ -93,15 +93,6 @@ $font-styles: (
                 list: (font-size: 9.75pt, line-height: 16pt, font-weight: 400, strong-weight: 600),
                 quote: (font-size: 11pt, line-height: 17pt, font-weight: 400, strong-weight: 700),
         )
-        /*print: (
-                h1: (font-size: 40px, line-height: normal, font-weight: 500, strong-weight: 700),
-                h2: (font-size: 15px, line-height: normal, font-weight: 600, strong-weight: 700),
-                h3: (font-size: 10px, line-height: normal , font-weight: 700, strong-weight: 800),
-                letter: (font-size: 13px, line-height: 1.3rem  , font-weight: 400, strong-weight: 700),
-                text: (font-size: 10px, line-height: 1.3rem  , font-weight: 400, strong-weight: 700),
-                list: (font-size: 10px, line-height: 1.3rem  , font-weight: 400, strong-weight: 600),
-                quote: (font-size: 10px, line-height: 1.3rem , font-weight: 400, strong-weight: 600),
-        )*/
 );
 
 //lld Properties
