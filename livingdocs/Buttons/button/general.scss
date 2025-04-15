@@ -18,14 +18,16 @@
   align-items: center;
   border-radius:50px ;
   border:2px solid $color-black;
-  background: $color-white;
+  background: transparent;
   &._btn-color-cream{
     border-color:$color-cream;
     color:$color-cream;
+    background: transparent;
   }
   &._btn-color-essence-orange{
     border-color:$color-essence-orange;
     color:$color-essence-orange;
+    background: transparent;
   }
 }
 
