@@ -17,7 +17,6 @@
 
   .srlp-image-box__title-container {
     grid-area: title;
-    padding: 0 32px;
   }
 
   .srlp-image-box__image-container {
@@ -30,12 +29,10 @@
 
   .srlp-image-box__content-container {
     grid-area: content;
-    padding: 0 32px;
   }
 
   .srlp-image-box__content-cta {
     grid-area: cta;
-    padding: 0 32px;
     .srl-button-container{
       &__inner{
         text-align: left;
