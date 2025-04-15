@@ -1,105 +1,72 @@
-@use 'nswow';
+@use "/src/assets/scss/user-style/variables" as *;
 
-.srl-columns {
-  padding-bottom: nswow.system-size-unit(30);
+@mixin srl-columns-layout($gutter: 20px, $breakpoint: $break-point-master) {
+  .srl-columns {
+    .srl-columns__grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $gutter;
 
-  break-before: auto;
-  break-inside: auto;
-  break-after: auto;
-
-  @include nswow.grid-media(print) {
-    padding-bottom: nswow.system-size-unit(30, in);
-  }
-
-  &__grid {
-    @include nswow.grid-row();
-  }
-
-  &__column {
-    break-before: auto;
-    break-inside: auto;
-    break-after: auto;
-
-    @include nswow.grid-col(12, phone);
-    @include nswow.grid-col(6, portrait);
-    @include nswow.grid-col(6, landscape);
-    @include nswow.grid-col(6, desktop);
-    @include nswow.grid-col(6, print);
-
-    @include nswow.helpers-trim-margins();
-
-    &--3,
-    &--4 {
-      display: none;
-    }
-  }
-
-  &.srl-columns--1-2 {
-    .srl-columns__column {
-      &--1 {
-        @include nswow.grid-col(12, phone);
-        @include nswow.grid-col(4, portrait);
-        @include nswow.grid-col(4, landscape);
-        @include nswow.grid-col(4, desktop);
-        @include nswow.grid-col(4, print);
-      }
-
-      &--2 {
-        @include nswow.grid-col(12, phone);
-        @include nswow.grid-col(8, portrait);
-        @include nswow.grid-col(8, landscape);
-        @include nswow.grid-col(8, desktop);
-        @include nswow.grid-col(8, print);
+      .srl-columns__column {
+        display: flex;
+        flex: 1 1 100%;
+        max-width: 100%;
+        flex-direction: column;
       }
     }
-  }
 
-  &.srl-columns--2-1 {
-    .srl-columns__column {
-      &--1 {
-        @include nswow.grid-col(12, phone);
-        @include nswow.grid-col(8, portrait);
-        @include nswow.grid-col(8, landscape);
-        @include nswow.grid-col(8, desktop);
-        @include nswow.grid-col(8, print);
+    @media (min-width: $breakpoint) {
+      &.srl-columns--1-2,
+      &.srl-columns--2-1 {
+        .srl-columns__column {
+          display: none;
+        }
       }
 
-      &--2 {
-        @include nswow.grid-col(12, phone);
-        @include nswow.grid-col(4, portrait);
-        @include nswow.grid-col(4, landscape);
-        @include nswow.grid-col(4, desktop);
-        @include nswow.grid-col(4, print);
+      &.srl-columns--1-2 {
+        .srl-columns__column:nth-child(1) {
+          display: flex;
+          flex: 0 0 calc((100% - $gutter) * 0.3333);
+          max-width: calc((100% - $gutter) * 0.3333);
+        }
+
+        .srl-columns__column:nth-child(2) {
+          display: flex;
+          flex: 0 0 calc((100% - $gutter) * 0.6667);
+          max-width: calc((100% - $gutter) * 0.6667);
+        }
       }
-    }
-  }
 
-  &.srl-columns--3 {
-    .srl-columns__column {
-      @include nswow.grid-col(12, phone);
-      @include nswow.grid-col(4, portrait);
-      @include nswow.grid-col(4, landscape);
-      @include nswow.grid-col(4, desktop);
-      @include nswow.grid-col(4, print);
+      &.srl-columns--2-1 {
+        .srl-columns__column:nth-child(1) {
+          display: flex;
+          flex: 0 0 calc((100% - $gutter) * 0.6667);
+          max-width: calc((100% - $gutter) * 0.6667);
+        }
 
-      &--3 {
-        display: block;
+        .srl-columns__column:nth-child(2) {
+          display: flex;
+          flex: 0 0 calc((100% - $gutter) * 0.3333);
+          max-width: calc((100% - $gutter) * 0.3333);
+        }
       }
-    }
-  }
 
-  &.srl-columns--4 {
-    .srl-columns__column {
-      @include nswow.grid-col(12, phone);
-      @include nswow.grid-col(3, portrait);
-      @include nswow.grid-col(3, landscape);
-      @include nswow.grid-col(3, desktop);
-      @include nswow.grid-col(3, print);
+      &.srl-columns--3 {
+        .srl-columns__column {
+          flex: 0 0 calc((100% - 2 * $gutter) / 3);
+          max-width: calc((100% - 2 * $gutter) / 3);
+        }
+      }
 
-      &--3,
-      &--4 {
-        display: block;
+      &.srl-columns--4 {
+        .srl-columns__column {
+          flex: 0 0 calc((100% - 3 * $gutter) / 4);
+          max-width: calc((100% - 3 * $gutter) / 4);
+        }
       }
     }
   }
 }
+
+
+@include srl-columns-layout(20px);
