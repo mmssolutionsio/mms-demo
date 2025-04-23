@@ -7,11 +7,15 @@
         "caption": "Image Text"
       },
       {
+        "caption": "Video Text",
+        "value": "_is-hero-video-text-element"
+      },
+      {
         "caption": "Herro",
         "value": "_is-hero-element"
       },
       {
-        "caption": "Video Text",
+        "caption": "Herro Video",
         "value": "_is-hero-video-element"
       }
     ]

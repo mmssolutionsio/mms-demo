@@ -42,7 +42,7 @@
   }
 
   @media screen and (min-width: $break-point-master) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 4fr;
     grid-template-areas:
       "image title"
       "image content"
@@ -64,7 +64,7 @@
   }
   &._img-pos-right{
     @media screen and (min-width: $break-point-master){
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 4fr 3fr;
       grid-template-areas:
       "title image"
       "content image"
