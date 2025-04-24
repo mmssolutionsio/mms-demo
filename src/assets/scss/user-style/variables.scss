@@ -61,6 +61,7 @@ $font-family-libre-baskerville: "Libre Baskerville", Sans-serif;
 //font-size
 $font-styles: (
         desktop: (
+                number-big: (font-size: 65px, line-height: 70px , font-weight: 600, strong-weight: 700),
                 h1: (font-size: 45px, line-height: 50px , font-weight: 600, strong-weight: 700),
                 h2: (font-size: 35px, line-height: normal , font-weight: 600, strong-weight: 700),
                 h3: (font-size: 25px, line-height: normal , font-weight: 500, strong-weight: 700),
@@ -72,6 +73,7 @@ $font-styles: (
                 quote: (font-size: 18px, line-height: normal , font-weight: 400, strong-weight: 700),
         ),
         mobile: (
+                number-big: (font-size: 45px, line-height: 50px , font-weight: 600, strong-weight: 700),
                 h1: (font-size: 30px, line-height: normal , font-weight: 700, strong-weight: 700),
                 h2: (font-size: 25px, line-height: normal , font-weight: 600, strong-weight: 700),
                 h3: (font-size: 22px, line-height: normal , font-weight: 500 , strong-weight: 700),

@@ -9,23 +9,23 @@
   width: fit-content;
   display: flex;
   flex-direction: column;
-  //@include text-color($color-essence-orange);
+  color:$color-essence-orange;
+  font-family: $font-family-league-spartan;
   .srlp-animating-number-small{
-    align-self: end;
-    //@include typo-font-size($font-family-league-spartan,18px, 30px );
+    text-align: right;
+    @include font-style-web(small-text);
     .srlp-animating-number-small-number{
-      margin: 0 $space-xs;
+
     }
   }
   .srlp-animating-number-big{
-    //@include typo-font-size($font-family-league-spartan,75px, 120px );
-    //@include typo-line-height(75px, 120px);
+    @include font-style-web(number-big);
     .srlp-animating-number-big-number{
-      margin: 0 $space-s;
+
     }
   }
   .srlp-animating-number-label{
-    //@include typo-font-size($font-family-league-spartan,18px, 30px );
+    @include font-style-web(small-text);
   }
 
 }
