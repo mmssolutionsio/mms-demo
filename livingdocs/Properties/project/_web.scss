@@ -92,3 +92,55 @@
     color: $color-black;
   }
 }
+._text-typo-outline-big{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $color-essence-orange;
+  font-family:$font-family-league-spartan;
+  font-style: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: transparent;
+  font-size:150px!important;
+  line-height: 100px!important;
+  font-weight: 600;
+  @media(min-width: $break-point-master){
+    font-size:350px!important;
+    line-height: 150px!important;
+  }
+}
+._text-typo-outline-small{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $color-essence-orange;
+  font-family:$font-family-league-spartan;
+  font-style: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color:transparent;
+  font-size:60px!important;
+  line-height: 60px!important;
+  font-weight: 600;
+  @media(min-width: $break-point-master){
+    font-size:100px!important;
+    line-height: 110px!important;
+  }
+}
+._text-typo-outline-small-strong-mix{
+  @include font-style-web(outline-small-mix);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $color-essence-orange;
+  font-family:$font-family-league-spartan;
+  font-style: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color:transparent;
+  strong{
+    color: $color-essence-orange;
+  }
+  font-size:60px!important;
+  line-height: 60px!important;
+  font-weight: 600;
+  @media(min-width: $break-point-master){
+    font-size:100px!important;
+    line-height: 110px!important;
+  }
+}

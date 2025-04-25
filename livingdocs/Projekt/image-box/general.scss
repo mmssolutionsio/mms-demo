@@ -42,6 +42,14 @@
   }
 
   @media screen and (min-width: $break-point-master) {
+    .srlp-image-box__title-container,
+    .srlp-image-box__content-container,
+    .srlp-image-box__content-cta{
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: $break-point-master) {
     grid-template-columns: 3fr 4fr;
     grid-template-areas:
       "image title"
