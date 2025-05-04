@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.74",
+  "version": "2.0.75",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -41,15 +41,15 @@
     }
   },
   "componentProperties": {
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
-    },
     "round-portrait": {
       "label": "Round portrait",
       "type": "option",
       "value": "round-portrait"
+    },
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
     },
     "srlp-web-width": {
       "label": "Web width (Project)",
@@ -225,6 +225,19 @@
         {
           "caption": "4 Column",
           "value": "_is_4_columns"
+        }
+      ]
+    },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
         }
       ]
     },
@@ -573,19 +586,6 @@
         {
           "caption": "12 Columns",
           "value": "_col-12"
-        }
-      ]
-    },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
         }
       ]
     },
