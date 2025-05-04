@@ -45,12 +45,14 @@ function getLinkByPage(page: string): string {
                   <li v-for="(item, index) in currentMenus.contactMenu" :key="index">
                     <MenuArticle
                       v-if="item.type === 'Article'"
+                      usedIn="use-in-footer"
                       :label="item.label"
                       :page="getLinkByPage(<string>item.page)"
                     />
-                    <MenuEntry v-if="item.type === 'MenuEntry'" :label="item.label" />
+<!--                    <MenuEntry v-if="item.type === 'MenuEntry'" :label="item.label" usedIn="use-in-footer" />-->
                     <MenuExternal
                       v-if="item.type === 'ExternalLink'"
+                      usedIn="use-in-footer"
                       :label="item.label"
                       :url="<string>item.url"
                     />

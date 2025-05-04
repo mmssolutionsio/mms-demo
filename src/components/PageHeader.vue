@@ -10,16 +10,15 @@ const srlSearch = ref()
 let searchValue = ref('')
 const baseUrl = ref(window.baseUrl ?? '')
 
-console.log(baseUrl)
-
 function toggleSearchVisible() {
   srlSearch.value.classList.toggle('visible')
 }
-
 function search() {
   $router.push(`/${locale}/search?searchValue=${searchValue.value}`)
   toggleSearchVisible()
 }
+
+
 </script>
 
 <template>
@@ -88,9 +87,10 @@ function search() {
         </div>
       </div>
     </div>
-  </div>
-  <div ref="srlSearch" class="srl-header__search">
-    <input type="search" placeholder="Search ..." v-model="searchValue" @keyup.enter="search" />
+    <div ref="srlSearch" class="srl-header__search">
+      <input type="search" placeholder="Search ..." v-model="searchValue" @keyup.enter="search" />
+      <button class="close-btn" @click="toggleSearchVisible">×</button>
+    </div>
   </div>
 </template>
 
@@ -115,6 +115,7 @@ function search() {
         height: auto;
         @media(min-width: $break-point-master){
           max-width: 232px;
+          width: 100%;
         }
       }
     }
@@ -124,11 +125,14 @@ function search() {
       align-items: center;
       justify-content: space-between;
       .navigation-holder{
-
-
+        position: relative;
+        display: none;
+        @media(min-width: $break-point-tablets-landscape){
+          display: block;
+        }
       }
       .tools-holder{
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         .downloads-holder{
@@ -138,7 +142,58 @@ function search() {
           background: transparent;
           border: none;
         }
+        @media(min-width: $break-point-tablets-landscape){
+          display: flex;
+        }
+      }
+    }
 
+  }
+  .srl-header__search{
+    display: none;
+
+    input{
+      display: block;
+      height:auto;
+      margin: 0 auto;
+      padding:$space-l;
+      @include font-style-web(letter);
+      color: $color-text;
+      font-family: $font-family-libre-baskerville;
+      font-style: normal;
+      border:1px solid $border-color;
+      max-width: 1920px;
+      width: 80%;
+    }
+    .close-btn {
+      position: absolute;
+      top: $space-m;
+      right: $space-m;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 55px;
+      cursor: pointer;
+      z-index: 10;
+
+      &:hover {
+        color: $color-essence-orange;
+      }
+    }
+    @media(min-width: $break-point-tablets-landscape){
+      &.visible{
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
       }
     }
 
