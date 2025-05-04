@@ -30,12 +30,18 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: $space-s 0;
+    padding: $space-s;
     text-transform: uppercase;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    display: block;
+    @media(min-width: $break-point-master){
+      border-bottom: 2px solid transparent;
+    }
     &.router-link-active{
-      border-bottom: 2px solid $color-essence-orange;
+      color: $color-essence-orange;;
+      @media(min-width: $break-point-master){
+        color: $color-text;
+        border-bottom: 2px solid $color-essence-orange;
+      }
     }
   }
 

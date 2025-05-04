@@ -10,6 +10,7 @@ const subNavigationVisible = ref<boolean>(false)
 const activeSubmenu = ref<NsWowMenu[]>([])
 const activeSubSubmenu = ref<NsWowMenu[]>([])
 
+
 const currentMenus = computed(() => {
   return config.value.menus[locale.value] ?? {}
 })
@@ -100,7 +101,12 @@ function closeSubmenu() {
     ul{
       list-style: none;
       display: flex;
-      gap: 32px;
+      flex-direction: column;
+      background: $color-white;
+      @media(min-width: $break-point-master){
+        flex-direction: row;
+        gap: $space-l;
+      }
     }
   }
 }

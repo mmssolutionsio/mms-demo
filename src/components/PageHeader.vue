@@ -9,6 +9,7 @@ const { locale } = useI18n()
 const srlSearch = ref()
 let searchValue = ref('')
 const baseUrl = ref(window.baseUrl ?? '')
+const mobileMenuOpen = ref<boolean>(false)
 
 function toggleSearchVisible() {
   srlSearch.value.classList.toggle('visible')
@@ -35,7 +36,12 @@ function search() {
           </div>
           <div class="col col-6 col-lg-9">
             <div class="header-right">
-              <div class="navigation-holder">
+              <div class="hamburger" :class="{ 'is-active': mobileMenuOpen }" @click="mobileMenuOpen = !mobileMenuOpen">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="navigation-holder" :class="{ 'is-open': mobileMenuOpen }">
                 <suspense>
                   <MainNavigation />
                 </suspense>
@@ -104,10 +110,14 @@ function search() {
     padding: $space-m;
     max-width: 1920px;
     margin: auto;
+    position: relative;
     @media(min-width: $break-point-master){
       padding: $space-l;
     }
     .logo-holder{
+      align-items: center;
+      display: flex;
+      height: 100%;
       img{
         max-width: 110px;
         display: block;
@@ -123,12 +133,82 @@ function search() {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      .navigation-holder{
+      justify-content: flex-end;
+      @media (min-width: $break-point-master) {
+        justify-content: space-between;
+      }
+
+      .hamburger {
+        width: 30px;
+        height: 24px;
         position: relative;
-        display: none;
-        @media(min-width: $break-point-tablets-landscape){
+        cursor: pointer;
+        display: block;
+        z-index: 10000;
+
+        span {
           display: block;
+          height: 3px;
+          width: 100%;
+          background: black;
+          border-radius: 2px;
+          position: absolute;
+          left: 0;
+          transition: all 0.3s ease;
+
+          &:nth-child(1) {
+            top: 0;
+          }
+
+          &:nth-child(2) {
+            top: 10px;
+          }
+
+          &:nth-child(3) {
+            top: 20px;
+          }
+        }
+
+        &.is-active {
+          span {
+            &:nth-child(1) {
+              transform: rotate(45deg);
+              top: 10px;
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-45deg);
+              top: 10px;
+            }
+          }
+        }
+
+        @media (min-width: $break-point-master) {
+          display: none;
+        }
+      }
+      .navigation-holder{
+        display: none;
+        transition: max-height 0.3s ease;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: 999;
+        &.is-open {
+          display: block;
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          @media(min-width: $break-point-tablets-landscape){
+            box-shadow: none;
+          }
+        }
+        @media(min-width: $break-point-tablets-landscape){
+          display: block !important;
+          position: relative;
         }
       }
       .tools-holder{
