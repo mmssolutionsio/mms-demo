@@ -91,44 +91,6 @@ function closeSubmenu() {
         </li>
       </ul>
     </div>
-    <div class="subMenu-inner">
-      <ul v-if="activeSubmenu.length && subNavigationVisible">
-        <li class="srl-typo-copy1" v-for="(level2Item, level2ItemIndex) in activeSubmenu">
-          <MenuArticle
-            v-if="level2Item.type === 'Article'"
-            :label="level2Item.label"
-            :page="getLinkByPage(<string>level2Item.page)"
-            @click="closeSubmenu()"
-          />
-          <MenuEntry v-if="level2Item.type === 'MenuEntry'" :label="level2Item.label" />
-          <MenuExternal
-            v-if="level2Item.type === 'ExternalLink'"
-            :label="level2Item.label"
-            :url="<string>level2Item.url"
-          />
-
-          <ul>
-            <li
-              class="srl-typo-copy1"
-              v-for="(level3Item, index) in level2Item && level2Item.submenuEntries"
-            >
-              <MenuArticle
-                v-if="level3Item.type === 'Article'"
-                :label="level3Item.label"
-                :page="getLinkByPage(<string>level3Item.page)"
-                @click="closeSubmenu()"
-              />
-              <MenuEntry v-if="level3Item.type === 'MenuEntry'" :label="level3Item.label" />
-              <MenuExternal
-                v-if="level3Item.type === 'ExternalLink'"
-                :label="level3Item.label"
-                :url="<string>level3Item.url"
-              />
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 
