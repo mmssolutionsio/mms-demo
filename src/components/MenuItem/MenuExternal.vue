@@ -36,6 +36,11 @@ a{
       }
     }
   }
+  &.footer-menu-1{
+
+  }
+
+  //$break-point-tablets-landscape
 
 }
 </style>

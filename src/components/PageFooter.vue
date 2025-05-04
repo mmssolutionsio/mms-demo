@@ -32,9 +32,9 @@ function getLinkByPage(page: string): string {
     <div class="component-inside-PageFooter">
       <div class="container is-huge">
         <div class="row">
-          <div class="col col-6 col-lg-7">
+          <div class="col col-12 col-lg-7">
           </div>
-          <div class="col col-6 col-lg-5">
+          <div class="col col-12 col-lg-5">
             <div class="row">
               <div class="col col-12 col-lg-6 ">
                 <h3>Kontakt</h3>
@@ -129,25 +129,27 @@ function getLinkByPage(page: string): string {
         </div>
         <GapComponent responsiveConfig="0-70" />
         <div class="row">
-          <div class="col col-6 col-lg-3">
-            © ns.wow
-          </div>
-          <div class="col col-6 col-lg-9">
+          <div class="col col-12 col-lg-9 order-lg-2">
             <ul class="footerMenuH">
               <li v-for="(item, index) in currentMenus.legalTextNavigation" :key="index">
                 <MenuArticle
                   v-if="item.type === 'Article'"
                   :label="item.label"
+                  usedIn="footer-menu-1"
                   :page="getLinkByPage(<string>item.page)"
                 />
                 <MenuEntry v-if="item.type === 'MenuEntry'" :label="item.label" />
                 <MenuExternal
                   v-if="item.type === 'ExternalLink'"
                   :label="item.label"
+                  usedIn="footer-menu-1"
                   :url="<string>item.url"
                 />
               </li>
             </ul>
+          </div>
+          <div class="col col-12 col-lg-3 order-lg-1">
+            © ns.wow
           </div>
         </div>
       </div>
@@ -202,10 +204,13 @@ function getLinkByPage(page: string): string {
     .footerMenuSvg{
       list-style: none;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 5px;
       margin: 0;
       padding: 0;
+      @media(min-width: $break-point-master){
+        flex-direction: column;
+      }
       li{
         display: block;
         a{
@@ -225,8 +230,15 @@ function getLinkByPage(page: string): string {
     .footerMenuH{
       list-style: none;
       display: flex;
-      justify-content: flex-end;
-      gap: $space-l;
+      justify-content: flex-start;
+      padding: 0;
+      flex-direction: column;
+      gap: $space-s;
+      @media (min-width: $break-point-tablets-landscape) {
+        justify-content: flex-end;
+        gap: $space-l;
+        flex-direction: row;
+      }
       li{
         display: block;
         a{
