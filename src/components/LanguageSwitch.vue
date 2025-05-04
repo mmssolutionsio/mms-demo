@@ -98,6 +98,11 @@ watch(route, makeLanguageSwitch)
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    background: $color-essence-orange;
+    color: $color-cream;
+    &[href="/de"]{
+      display: none;
+    }
     &.active{
       background: $color-essence-orange;
       color: $color-cream;
