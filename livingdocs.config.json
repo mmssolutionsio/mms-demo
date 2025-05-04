@@ -41,16 +41,6 @@
     }
   },
   "componentProperties": {
-    "round-portrait": {
-      "label": "Round portrait",
-      "type": "option",
-      "value": "round-portrait"
-    },
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
-    },
     "srlp-web-width": {
       "label": "Web width (Project)",
       "type": "select",
@@ -65,6 +55,10 @@
         {
           "caption": "Content",
           "value": "srlp-grid__content"
+        },
+        {
+          "caption": "Max-Width",
+          "value": "srlp-grid__max"
         },
         {
           "caption": "Full",
@@ -210,6 +204,73 @@
           "value": "_pdf_break_colum"
         }
       ]
+    },
+    "round-portrait": {
+      "label": "Round portrait",
+      "type": "option",
+      "value": "round-portrait"
+    },
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
+    },
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
+    },
+    "vertical-alignment": {
+      "label": "Vertical alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "top"
+        },
+        {
+          "caption": "center",
+          "value": "vertical-center"
+        },
+        {
+          "caption": "bottom",
+          "value": "vertical-bottom"
+        }
+      ]
+    },
+    "columns": {
+      "label": "Columns",
+      "type": "select",
+      "options": [
+        {
+          "caption": "1/2 1/2"
+        },
+        {
+          "caption": "1/3 2/3",
+          "value": "srl-columns--1-2"
+        },
+        {
+          "caption": "2/3 1/3",
+          "value": "srl-columns--2-1"
+        },
+        {
+          "caption": "1/3 1/3 1/3",
+          "value": "srl-columns--3"
+        },
+        {
+          "caption": "1/4 1/4 1/4 1/4",
+          "value": "srl-columns--4"
+        }
+      ]
+    },
+    "revert": {
+      "label": "Switch sides",
+      "type": "option",
+      "value": "revert"
     },
     "srlp-pdf-multi-column-container-count": {
       "label": "Column Count (Project - PDF ONLY)",
@@ -588,63 +649,6 @@
           "value": "_col-12"
         }
       ]
-    },
-    "show-mobile-image": {
-      "label": "Show mobile image",
-      "type": "option",
-      "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
-    },
-    "vertical-alignment": {
-      "label": "Vertical alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "top"
-        },
-        {
-          "caption": "center",
-          "value": "vertical-center"
-        },
-        {
-          "caption": "bottom",
-          "value": "vertical-bottom"
-        }
-      ]
-    },
-    "columns": {
-      "label": "Columns",
-      "type": "select",
-      "options": [
-        {
-          "caption": "1/2 1/2"
-        },
-        {
-          "caption": "1/3 2/3",
-          "value": "srl-columns--1-2"
-        },
-        {
-          "caption": "2/3 1/3",
-          "value": "srl-columns--2-1"
-        },
-        {
-          "caption": "1/3 1/3 1/3",
-          "value": "srl-columns--3"
-        },
-        {
-          "caption": "1/4 1/4 1/4 1/4",
-          "value": "srl-columns--4"
-        }
-      ]
-    },
-    "revert": {
-      "label": "Switch sides",
-      "type": "option",
-      "value": "revert"
     },
     "horizontal-alignment": {
       "label": "Horizontal alignment",

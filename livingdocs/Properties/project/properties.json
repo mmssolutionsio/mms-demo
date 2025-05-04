@@ -15,6 +15,10 @@
         "value": "srlp-grid__content"
       },
       {
+        "caption": "Max-Width",
+        "value": "srlp-grid__max"
+      },
+      {
         "caption": "Full",
         "value": "srlp-grid__full"
       }

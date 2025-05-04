@@ -75,7 +75,6 @@ function search() {
                         </g>
                       </g>
                     </svg>
-
                   </button>
                 </div>
                 <div class="language-switch-holder">
@@ -90,10 +89,12 @@ function search() {
       </div>
     </div>
   </div>
+  <div ref="srlSearch" class="srl-header__search">
+    <input type="search" placeholder="Search ..." v-model="searchValue" @keyup.enter="search" />
+  </div>
 </template>
 
 <style scoped lang="scss">
-@use 'nswow';
 .component-holder-PageHeader{
   .component-inside-PageHeader{
     display: flex;
@@ -130,7 +131,6 @@ function search() {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: nswow.system-size-unit(5);
         .downloads-holder{
           display: none;
         }

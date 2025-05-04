@@ -23,6 +23,10 @@
     @include srlp-grid-width(large); // 1200px
   }
 
+  &__max {
+    @include srlp-grid-width(max); // 1920px
+  }
+
   &__full {
     @include srlp-grid-width(full); // volle Breite
     padding-left:0 ;

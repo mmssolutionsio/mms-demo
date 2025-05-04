@@ -50,7 +50,7 @@ function closeSubmenu() {
     <div class="mainMenu-inner">
       <ul>
         <li
-          class="srl-typo-copy1"
+          class=""
           v-for="(level1Item, level1ItemIndex) in currentMenu"
           :class="level1Item.type"
         >
@@ -95,30 +95,12 @@ function closeSubmenu() {
 </template>
 
 <style scoped lang="scss">
-@use 'nswow';
 .component-holder-MainNavigation{
   .mainMenu-inner{
-    >ul{
+    ul{
       list-style: none;
       display: flex;
       gap: 32px;
-      li{
-        a{
-          font-family: $font-family-league-spartan;
-          color: $color-text;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          text-transform: uppercase;
-          border-top: 1px solid transparent;
-          border-bottom: 1px solid transparent;
-          &.router-link-active{
-            border-bottom: 1px solid $color-essence-orange;
-          }
-        }
-
-      }
     }
   }
 }
