@@ -75,7 +75,10 @@ watch(route, makeLanguageSwitch)
 <template>
   <div class="srl-language-switch">
     <div v-for="link in languageItems" :key="link.label">
-      <router-link :to="link.route" :class="{ active: link.active }">
+      <router-link
+        :to="link.route"
+        :class="[{ active: link.active }, `lang-${link.label}`]"
+      >
         {{ link.label.toUpperCase() }}
       </router-link>
     </div>
@@ -100,8 +103,12 @@ watch(route, makeLanguageSwitch)
     border-radius: 50%;
     background: $color-essence-orange;
     color: $color-cream;
-    &[href="/de"]{
+    &.lang-de{
       display: none;
+    }
+    &.lang-en{
+      background: $color-essence-orange;
+      color: $color-cream;
     }
     &.active{
       background: $color-essence-orange;

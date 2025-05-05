@@ -4,7 +4,7 @@
 @use "_web";
 
 .srlp-grid {
-  @include srlp-grid-width(large); // 1200px
+  @include srlp-grid-width(max); // 1920px
   padding-left:16px ;
   padding-right:16px ;
   @media (min-width: $break-point-master){
