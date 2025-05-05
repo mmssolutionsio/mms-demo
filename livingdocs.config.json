@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.80",
+  "version": "2.0.81",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -215,11 +215,6 @@
         }
       ]
     },
-    "show-mobile-image": {
-      "label": "Show mobile image",
-      "type": "option",
-      "value": "show-mobile-image"
-    },
     "srlp-pdf-multi-column-container-count": {
       "label": "Column Count (Project - PDF ONLY)",
       "type": "select",
@@ -249,11 +244,6 @@
           "value": "_is_marginal_right"
         }
       ]
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
     },
     "srlp-pdf-cover-page-type": {
       "label": "Type (Project - PDF ONLY)",
@@ -602,6 +592,16 @@
           "value": "_col-12"
         }
       ]
+    },
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
