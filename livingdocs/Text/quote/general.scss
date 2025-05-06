@@ -1,0 +1,92 @@
+//@use 'nswow';
+@use "/src/assets/scss/user-style/variables" as *;
+@use "/src/assets/scss/user-style/mixins" as *;
+
+.srl-quote {
+  break-before: auto;
+  break-inside: avoid;
+  break-after: auto;
+  background-color: red!important;
+
+  &__container {
+    //padding: nswow.system-size-unit(20);
+    background-color: $color-white;
+  }
+
+  &__text {
+    @include font-style-web(quote);
+    color: $color-text;
+    font-family: $font-family-libre-baskerville;
+    font-style: italic;
+
+  }
+
+  &:not(.hide-quote-characters) {
+    .srl-quote__text {
+      &:before {
+        content: '\301E';
+      }
+      &:after {
+        content: '\301D';
+      }
+    }
+  }
+
+  &__cite {
+    //margin-top: nswow.system-size-unit(20);
+  }
+
+  &__author {
+    color: $color-text;
+    @include font-style-web(text);
+  }
+
+  &__function {
+    color: $color-text;
+    @include font-style-web(text);
+  }
+
+  &._bg-color-essence-orange{
+    .srl-quote__container {
+      background-color: $color-essence-orange;
+    }
+  }
+  &._bg-color-cream{
+    .srl-quote__container {
+      background-color: $color-cream;
+    }
+  }
+  &._bg-color-white{
+    .srl-quote__container {
+      background-color: $color-white;
+    }
+  }
+  &._text-color-cream{
+
+    .srl-quote__text{
+      color: $color-cream;
+    }
+
+    .srl-quote__author {
+      color: $color-cream;
+    }
+
+    .srl-quote__function {
+      color: $color-cream;
+    }
+  }
+  &._text-color-essence-orange{
+
+    .srl-quote__text{
+      color: $color-essence-orange;
+    }
+
+    .srl-quote__author {
+      color: $color-essence-orange;
+    }
+
+    .srl-quote__function {
+      color: $color-essence-orange;
+    }
+  }
+}
