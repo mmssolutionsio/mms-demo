@@ -41,16 +41,6 @@
     }
   },
   "componentProperties": {
-    "round-portrait": {
-      "label": "Round portrait",
-      "type": "option",
-      "value": "round-portrait"
-    },
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
-    },
     "srlp-web-width": {
       "label": "Web width (Project)",
       "type": "select",
@@ -593,15 +583,20 @@
         }
       ]
     },
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
+    },
+    "round-portrait": {
+      "label": "Round portrait",
+      "type": "option",
+      "value": "round-portrait"
+    },
     "show-mobile-image": {
       "label": "Show mobile image",
       "type": "option",
       "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
@@ -666,6 +661,11 @@
           "value": "horizontal-right"
         }
       ]
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
     }
   },
   "groups": [

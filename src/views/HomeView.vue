@@ -32,6 +32,7 @@ async function getContent() {
       await nextTick(() => {
         if (articleContent.value) {
           Autoload.init(articleContent.value)
+          interceptInternalLinks()
         }
       })
     } catch (e) {
@@ -41,6 +42,26 @@ async function getContent() {
   } else {
     await router.push(`/${locale.value}/404`)
   }
+}
+function interceptInternalLinks() {
+  if (!articleContent.value) return
+
+  const anchors = articleContent.value.querySelectorAll('a[href]')
+  anchors.forEach(anchor => {
+    const href = anchor.getAttribute('href')
+    if (
+      href &&
+      !href.startsWith('http') &&
+      !href.startsWith('#') &&
+      !href.startsWith('mailto:') &&
+      !href.startsWith('/')
+    ) {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault()
+        router.push(`/${locale.value}/${href}`)
+      })
+    }
+  })
 }
 onMounted(async () => {
   await getContent()
