@@ -1,4 +1,3 @@
-//@use 'nswow';
 @use "/src/assets/scss/user-style/variables" as *;
 @use "/src/assets/scss/user-style/mixins" as *;
 
@@ -6,10 +5,8 @@
   break-before: auto;
   break-inside: avoid;
   break-after: auto;
-  background-color: red!important;
 
   &__container {
-    //padding: nswow.system-size-unit(20);
     background-color: $color-white;
   }
 
