@@ -28,7 +28,19 @@ async function getContent() {
     try {
       const response = await fetch(file)
       res = await response.text()
-      output.value = res.replaceAll('../','./');
+
+      const parser = new DOMParser()
+      const parsed = parser.parseFromString(res, 'text/html')
+
+      parsed.querySelectorAll('a[href]').forEach((a) => {
+        const href = a.getAttribute('href')
+        // Nur relative Pfade anpassen, keine absoluten URLs
+        if (href && !href.startsWith('http') && !href.startsWith('/') && !href.startsWith('#')) {
+          a.setAttribute('href', `/${locale.value}/${href}`)
+        }
+      })
+
+      output.value = parsed.body.innerHTML.replaceAll('../','./');
       await nextTick(() => {
         if (articleContent.value) {
           Autoload.init(articleContent.value)
