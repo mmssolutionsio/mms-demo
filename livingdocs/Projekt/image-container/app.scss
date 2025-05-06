@@ -77,23 +77,28 @@
         pointer-events: none; // verhindert Interaktion
       }
     }
-
-    .srlp-image-container-holder{
-      justify-content: space-between;
-      .srlp-image-container__headline-container {
-        display: block;
-        width: 100%;
-        align-self: flex-start;
-      }
-      .srlp-image-container__subheadline-container {
-        width: 100%;
-        align-self: flex-end;
-        margin-bottom: -125px;
-        .srl-article__grid{
-          .srl-article__grid--inner{
-            justify-self: center;
-            @media (min-width: $break-point-master) {
-              justify-self: right;
+    .srlp-grid-child{
+      background-color: red;
+      height: 100%;
+      .srlp-image-container-holder{
+        display: flex;
+        flex-direction: column; // Wichtig für vertikale Anordnung
+        justify-content: space-between; // Positioniert Top & Bottom
+        height: 100%;
+        .srlp-image-container__headline-container {
+          display: block;
+          width: 100%;
+          min-height: 10px;
+        }
+        .srlp-image-container__subheadline-container {
+          min-height: 10px;
+          width: 100%;
+          .srl-article__grid{
+            .srl-article__grid--inner{
+              justify-self: center;
+              @media (min-width: $break-point-master) {
+                justify-self: right;
+              }
             }
           }
         }
