@@ -1,0 +1,17 @@
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appendLog>true</appendLog>
+  <debugSettings>
+    <all>true</all>
+    <appendLogs>false</appendLogs>
+    <attachConfiguration>false</attachConfiguration>
+    <attachDocuments>false</attachDocuments>
+    <attachLogs>false</attachLogs>
+    <attachResources>false</attachResources>
+    <forceResult>false</forceResult>
+  </debugSettings>
+  <inspectableSettings>
+    <enabled>true</enabled>
+    <endPage>0</endPage>
+    <startPage>0</startPage>
+  </inspectableSettings>
+</configuration>
