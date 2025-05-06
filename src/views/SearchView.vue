@@ -95,7 +95,7 @@ getSearchResult()
     <div class="srl-article-container">
       <h1>{{ $t('search.title') }}</h1>
 
-      <div v-if="isLoading">Loading...</div>
+      <h2 v-if="isLoading">Loading...</h2>
       <transition name="fade">
         <h2 v-if="!isLoading">
           {{ $t('search.for', { search: searchValue, count: searchData.length }) }}
@@ -103,11 +103,11 @@ getSearchResult()
       </transition>
 
       <transition name="fade">
-        <div v-if="!isLoading && searchValue">
-          <div v-for="(dataItem, index) in searchData" :key="index">
+        <div v-if="!isLoading && searchValue" class="search-result">
+          <div v-for="(dataItem, index) in searchData" :key="index" class="search-item">
             <h5>{{ dataItem.translatedTitle }}</h5>
             <p>{{ dataItem.firstParagraph }}</p>
-            <router-link :to="{ path: dataItem.link }">{{ dataItem.title }}</router-link>
+            <router-link :to="{ path: dataItem.link }">read more ...</router-link>
           </div>
         </div>
       </transition>
@@ -116,11 +116,35 @@ getSearchResult()
 </template>
 
 <style scoped lang="scss">
-@use 'nswow';
-
 .srl-article {
-  margin: 0 auto;
-  @include nswow.grid-container();
-  @include nswow.typography-core-styles();
+  @include srlp-grid-width(large); // 1920px
+  color:$color-text ;
+  h1{
+    @include font-style-web(h1);
+  }
+  h2{
+    @include font-style-web(h2);
+  }
+  .search-result{
+    @include srlp-grid-width(standard);
+    .search-item{
+      margin:$space-l 0 ;
+      h5{
+        @include font-style-web(letter);
+        color:$color-essence-orange ;
+      }
+      p{@include font-style-web(text);
+        color:$color-text ;
+        padding:$space-s 0 ;
+      }
+      a{
+        padding:$space-s $space-m ;
+        background: $color-essence-orange;
+        border-radius: 50px;
+        color:$color-cream ;
+
+      }
+    }
+  }
 }
 </style>

@@ -27,23 +27,12 @@ async function getContent() {
     const file = `./html/${locale.value}/${currentPage.name}.html`
     try {
       const response = await fetch(file)
-      res = await response.text()
-
-      const parser = new DOMParser()
-      const parsed = parser.parseFromString(res, 'text/html')
-
-      parsed.querySelectorAll('a[href]').forEach((a) => {
-        const href = a.getAttribute('href')
-        // Nur relative Pfade anpassen, keine absoluten URLs
-        if (href && !href.startsWith('http') && !href.startsWith('/') && !href.startsWith('#')) {
-          a.setAttribute('href', `/${locale.value}/${href}`)
-        }
-      })
-
-      output.value = parsed.body.innerHTML.replaceAll('../','./');
+      const res = await response.text()
+      output.value = res.replaceAll('../', './')
       await nextTick(() => {
         if (articleContent.value) {
           Autoload.init(articleContent.value)
+          interceptInternalLinks()
         }
       })
     } catch (e) {
@@ -54,6 +43,28 @@ async function getContent() {
     await router.push(`/${locale.value}/404`)
   }
 }
+
+function interceptInternalLinks() {
+  if (!articleContent.value) return
+
+  const anchors = articleContent.value.querySelectorAll('a[href]')
+  anchors.forEach(anchor => {
+    const href = anchor.getAttribute('href')
+    if (
+      href &&
+      !href.startsWith('http') &&
+      !href.startsWith('#') &&
+      !href.startsWith('mailto:') &&
+      !href.startsWith('/')
+    ) {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault()
+        router.push(`/${locale.value}/${href}`)
+      })
+    }
+  })
+}
+
 onMounted(async () => {
   await getContent()
 })
