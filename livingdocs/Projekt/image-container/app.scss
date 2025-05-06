@@ -19,13 +19,6 @@
     padding-bottom:$space-xl;
   }
   .srlp-image-container-holder {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: end;
-    position: relative;
     .srlp-image-container__headline-container {
       display: none;
     }
@@ -60,6 +53,7 @@
   &._is-hero-video-text-element{
     background-image: none!important;
     position: relative;
+    display: flex;
     .srlp-video-container-holder{
       position: absolute;
       left: 0;
@@ -78,8 +72,6 @@
       }
     }
     .srlp-grid-child{
-      background-color: red;
-      height: 100%;
       .srlp-image-container-holder{
         display: flex;
         flex-direction: column; // Wichtig für vertikale Anordnung
