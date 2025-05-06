@@ -215,6 +215,16 @@
         }
       ]
     },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
+    },
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
     "srlp-pdf-marginal-columns-position": {
       "label": "Position (Project - PDF ONLY)",
       "type": "select",
@@ -266,28 +276,20 @@
         }
       ]
     },
-    "srlp-image-container-hero": {
-      "label": "type of element (Project)",
+    "srlp-image-box": {
+      "label": "Image Position (Project)",
       "type": "select",
       "options": [
         {
-          "caption": "Image Text"
+          "caption": "Left"
         },
         {
-          "caption": "Video Text",
-          "value": "_is-hero-video-text-element"
-        },
-        {
-          "caption": "Herro",
-          "value": "_is-hero-element"
-        },
-        {
-          "caption": "Herro Video",
-          "value": "_is-hero-video-element"
+          "caption": "Right",
+          "value": "_img-pos-right"
         }
       ]
     },
-    "srlp-image-container-height": {
+    "srlp-image-box-height": {
       "label": "Height of element (Project)",
       "type": "select",
       "options": [
@@ -368,20 +370,28 @@
         }
       ]
     },
-    "srlp-image-box": {
-      "label": "Image Position (Project)",
+    "srlp-image-container-hero": {
+      "label": "type of element (Project)",
       "type": "select",
       "options": [
         {
-          "caption": "Left"
+          "caption": "Image Text"
         },
         {
-          "caption": "Right",
-          "value": "_img-pos-right"
+          "caption": "Video Text",
+          "value": "_is-hero-video-text-element"
+        },
+        {
+          "caption": "Herro",
+          "value": "_is-hero-element"
+        },
+        {
+          "caption": "Herro Video",
+          "value": "_is-hero-video-element"
         }
       ]
     },
-    "srlp-image-box-height": {
+    "srlp-image-container-height": {
       "label": "Height of element (Project)",
       "type": "select",
       "options": [
@@ -592,16 +602,6 @@
           "value": "_col-12"
         }
       ]
-    },
-    "show-mobile-image": {
-      "label": "Show mobile image",
-      "type": "option",
-      "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
