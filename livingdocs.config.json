@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.81",
+  "version": "2.0.82",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -215,6 +215,19 @@
         }
       ]
     },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
+        }
+      ]
+    },
     "srlp-pdf-multi-column-container-count": {
       "label": "Column Count (Project - PDF ONLY)",
       "type": "select",
@@ -229,19 +242,6 @@
         {
           "caption": "4 Column",
           "value": "_is_4_columns"
-        }
-      ]
-    },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
         }
       ]
     },
