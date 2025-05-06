@@ -23,6 +23,13 @@ function getLinkByPage(page: string): string {
   return `/${locale.value}/${page}`
 }
 
+function toggleSearchVisible() {
+  srlSearch.value.classList.toggle('visible')
+}
+function search() {
+  $router.push(`/${locale}/search?searchValue=${searchValue.value}`)
+  toggleSearchVisible()
+}
 
 </script>
 
@@ -80,7 +87,7 @@ function getLinkByPage(page: string): string {
                 <h3>Services</h3>
                 <ul class="footerMenuSvg">
                   <li>
-                    <a href="#">
+                    <router-link :to="{ path: `/${locale}/downloads` }">
                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Group">
                           <path id="Vector" d="M17 13.5234V14.9125C17 16.0616 16.0618 16.9998 14.9127 16.9998H3.08727C1.93818 16.9998 1 16.0616 1 14.9125V13.5234" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -88,25 +95,7 @@ function getLinkByPage(page: string): string {
                           <path id="Vector_3" d="M14 8L9 13L4 8" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                       </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Vector" d="M6 0.5H1V15.5H17V3.5H9L6 0.5Z" stroke="black"/>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Group">
-                          <path id="Vector" d="M6.23364 11.9673C9.40025 11.9673 11.9673 9.40025 11.9673 6.23364C11.9673 3.06704 9.40025 0.5 6.23364 0.5C3.06704 0.5 0.5 3.06704 0.5 6.23364C0.5 9.40025 3.06704 11.9673 6.23364 11.9673Z" stroke="black" stroke-miterlimit="10" stroke-linejoin="round"/>
-                          <path id="Vector_2" d="M10.4199 10.4209L16.9994 17.0003" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                      </svg>
-
-                    </a>
+                    </router-link>
                   </li>
                   <li>
                     <a href="#">
