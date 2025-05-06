@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRouter } from 'vue-router'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import MainNavigation from '@/components/MainNavigation.vue'
@@ -10,12 +10,16 @@ const srlSearch = ref()
 let searchValue = ref('')
 const baseUrl = ref(window.baseUrl ?? '')
 const mobileMenuOpen = ref<boolean>(false)
+const router = useRouter()
 
 function toggleSearchVisible() {
   srlSearch.value.classList.toggle('visible')
 }
 function search() {
-  $router.push(`/${locale}/search?searchValue=${searchValue.value}`)
+  router.push({
+    path: `/${locale.value}/search`,
+    query: { searchValue: searchValue.value }
+  })
   toggleSearchVisible()
 }
 
