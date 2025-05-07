@@ -8,7 +8,7 @@
 
 .srlp-image-container {
   position: relative;
-  min-height: 50vw;
+  min-height: 50vh;
   background-position: center;
   background-size: cover;
   align-items: stretch;
@@ -57,30 +57,18 @@
       }
     }
   }
+  &._is-hero-video-element,
   &._is-hero-video-text-element{
     .srlp-video-container-holder{
       display: none;
     }
 
     .srlp-image-container-holder{
-      justify-content: space-between;
       .srlp-image-container__headline-container {
         display: block;
-        width: 100%;
-        align-self: flex-start;
       }
       .srlp-image-container__subheadline-container {
-        width: 100%;
-        align-self: flex-end;
-        margin-bottom: -125px;
-        .srl-article__grid{
-          .srl-article__grid--inner{
-            justify-self: center;
-            @media (min-width: $break-point-master) {
-              justify-self: right;
-            }
-          }
-        }
+        display: block;
       }
     }
   }

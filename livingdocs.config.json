@@ -1,7 +1,7 @@
 {
   "name": "ld-demo-new",
   "label": "skeleton",
-  "version": "2.0.83",
+  "version": "2.0.85",
   "author": "nsgroup",
   "assets": {
     "css": [
@@ -41,66 +41,15 @@
     }
   },
   "componentProperties": {
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
-    },
     "round-portrait": {
       "label": "Round portrait",
       "type": "option",
       "value": "round-portrait"
     },
-    "srlp-pdf-multi-column-container-count": {
-      "label": "Column Count (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (2)"
-        },
-        {
-          "caption": "3 Column",
-          "value": "_is_3_columns"
-        },
-        {
-          "caption": "4 Column",
-          "value": "_is_4_columns"
-        }
-      ]
-    },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
-        }
-      ]
-    },
-    "srlp-pdf-cover-page-type": {
-      "label": "Type (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Only Image)"
-        },
-        {
-          "caption": "Essence Orange, text at bottom.",
-          "value": "_is_color_label_btn"
-        },
-        {
-          "caption": "Essence Orange, text at top.",
-          "value": "_is_color_label_top"
-        },
-        {
-          "caption": "Main cover",
-          "value": "_is_main_cover"
-        }
-      ]
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
     },
     "srlp-web-width": {
       "label": "Web width (Project)",
@@ -263,6 +212,67 @@
         {
           "caption": "Yes",
           "value": "_pdf_break_colum"
+        }
+      ]
+    },
+    "show-mobile-image": {
+      "label": "Show mobile image",
+      "type": "option",
+      "value": "show-mobile-image"
+    },
+    "show-pdf-image": {
+      "label": "Show PDF image",
+      "type": "option",
+      "value": "show-pdf-image"
+    },
+    "srlp-pdf-multi-column-container-count": {
+      "label": "Column Count (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (2)"
+        },
+        {
+          "caption": "3 Column",
+          "value": "_is_3_columns"
+        },
+        {
+          "caption": "4 Column",
+          "value": "_is_4_columns"
+        }
+      ]
+    },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
+        }
+      ]
+    },
+    "srlp-pdf-cover-page-type": {
+      "label": "Type (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Only Image)"
+        },
+        {
+          "caption": "Essence Orange, text at bottom.",
+          "value": "_is_color_label_btn"
+        },
+        {
+          "caption": "Essence Orange, text at top.",
+          "value": "_is_color_label_top"
+        },
+        {
+          "caption": "Main cover",
+          "value": "_is_main_cover"
         }
       ]
     },
@@ -462,63 +472,6 @@
         }
       ]
     },
-    "srlp-animating-diagrams-columns": {
-      "label": "Columns Count (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (12 Columns)"
-        },
-        {
-          "caption": "1 Column",
-          "value": "_col-1"
-        },
-        {
-          "caption": "2 Columns",
-          "value": "_col-2"
-        },
-        {
-          "caption": "3 Columns",
-          "value": "_col-3"
-        },
-        {
-          "caption": "4 Columns",
-          "value": "_col-4"
-        },
-        {
-          "caption": "5 Columns",
-          "value": "_col-5"
-        },
-        {
-          "caption": "6 Columns",
-          "value": "_col-6"
-        },
-        {
-          "caption": "7 Columns",
-          "value": "_col-7"
-        },
-        {
-          "caption": "8 Columns",
-          "value": "_col-8"
-        },
-        {
-          "caption": "9 Columns",
-          "value": "_col-9"
-        },
-        {
-          "caption": "10 Columns",
-          "value": "_col-10"
-        },
-        {
-          "caption": "11 Columns",
-          "value": "_col-11"
-        },
-        {
-          "caption": "12 Columns",
-          "value": "_col-12"
-        }
-      ]
-    },
     "srlp-gap-desktop-class": {
       "label": "Gap Desktop (Project)",
       "type": "select",
@@ -593,15 +546,62 @@
         }
       ]
     },
-    "show-mobile-image": {
-      "label": "Show mobile image",
-      "type": "option",
-      "value": "show-mobile-image"
-    },
-    "show-pdf-image": {
-      "label": "Show PDF image",
-      "type": "option",
-      "value": "show-pdf-image"
+    "srlp-animating-diagrams-columns": {
+      "label": "Columns Count (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (12 Columns)"
+        },
+        {
+          "caption": "1 Column",
+          "value": "_col-1"
+        },
+        {
+          "caption": "2 Columns",
+          "value": "_col-2"
+        },
+        {
+          "caption": "3 Columns",
+          "value": "_col-3"
+        },
+        {
+          "caption": "4 Columns",
+          "value": "_col-4"
+        },
+        {
+          "caption": "5 Columns",
+          "value": "_col-5"
+        },
+        {
+          "caption": "6 Columns",
+          "value": "_col-6"
+        },
+        {
+          "caption": "7 Columns",
+          "value": "_col-7"
+        },
+        {
+          "caption": "8 Columns",
+          "value": "_col-8"
+        },
+        {
+          "caption": "9 Columns",
+          "value": "_col-9"
+        },
+        {
+          "caption": "10 Columns",
+          "value": "_col-10"
+        },
+        {
+          "caption": "11 Columns",
+          "value": "_col-11"
+        },
+        {
+          "caption": "12 Columns",
+          "value": "_col-12"
+        }
+      ]
     },
     "vertical-alignment": {
       "label": "Vertical alignment",

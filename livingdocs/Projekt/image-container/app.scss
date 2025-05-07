@@ -8,7 +8,7 @@
 
 .srlp-image-container {
   position: relative;
-  min-height: 50vw;
+  min-height: 50vh;
   background-position: center;
   background-size: cover;
   align-items: stretch;
@@ -50,6 +50,54 @@
       }
     }
   }
+  &._is-hero-video-element{
+    background-image: none!important;
+    position: relative;
+    display: flex;
+    .srlp-video-container-holder{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top:0;
+      height: 100%;
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        pointer-events: none; // verhindert Interaktion
+      }
+    }
+    .srlp-grid-child{
+      width: 100%;
+      .srlp-image-container-holder{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column; // Wichtig für vertikale Anordnung
+        justify-content: space-between; // Positioniert Top & Bottom
+        height: 100%;
+        width: 100%;
+        .srlp-image-container__headline-container {
+          display: block;
+          width: 100%;
+          min-height: 10px;
+        }
+        .srlp-image-container__subheadline-container {
+          min-height: 10px;
+          width: 100%;
+          margin-bottom:-250px;
+          @media (min-width: $break-point-master) {
+            margin-bottom:-300px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
   &._is-hero-video-text-element{
     background-image: none!important;
     position: relative;
@@ -72,6 +120,7 @@
       }
     }
     .srlp-grid-child{
+      width: 100%;
       .srlp-image-container-holder{
         display: flex;
         flex-direction: column; // Wichtig für vertikale Anordnung
