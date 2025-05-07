@@ -147,8 +147,10 @@ function search() {
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
+      height: 100%;
       @media (min-width: $break-point-master) {
         justify-content: space-between;
+        height: auto;
       }
 
       .hamburger {
