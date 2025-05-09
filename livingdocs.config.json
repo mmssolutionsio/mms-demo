@@ -41,6 +41,46 @@
     }
   },
   "componentProperties": {
+    "round-portrait": {
+      "label": "Round portrait",
+      "type": "option",
+      "value": "round-portrait"
+    },
+    "hide-quote-characters": {
+      "label": "Hide quote characters before and after",
+      "type": "option",
+      "value": "hide-quote-characters"
+    },
+    "srlp-pdf-multi-column-container-count": {
+      "label": "Column Count (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (2)"
+        },
+        {
+          "caption": "3 Column",
+          "value": "_is_3_columns"
+        },
+        {
+          "caption": "4 Column",
+          "value": "_is_4_columns"
+        }
+      ]
+    },
+    "srlp-pdf-marginal-columns-position": {
+      "label": "Position (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (Left)"
+        },
+        {
+          "caption": "Marginal Right",
+          "value": "_is_marginal_right"
+        }
+      ]
+    },
     "srlp-web-width": {
       "label": "Web width (Project)",
       "type": "select",
@@ -205,36 +245,6 @@
         }
       ]
     },
-    "srlp-pdf-marginal-columns-position": {
-      "label": "Position (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Left)"
-        },
-        {
-          "caption": "Marginal Right",
-          "value": "_is_marginal_right"
-        }
-      ]
-    },
-    "srlp-pdf-multi-column-container-count": {
-      "label": "Column Count (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (2)"
-        },
-        {
-          "caption": "3 Column",
-          "value": "_is_3_columns"
-        },
-        {
-          "caption": "4 Column",
-          "value": "_is_4_columns"
-        }
-      ]
-    },
     "srlp-pdf-cover-page-type": {
       "label": "Type (Project - PDF ONLY)",
       "type": "select",
@@ -270,6 +280,108 @@
       ]
     },
     "srlp-image-box-height": {
+      "label": "Height of element (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "default (50%)"
+        },
+        {
+          "caption": "10%",
+          "value": "_height-10"
+        },
+        {
+          "caption": "15%",
+          "value": "_height-10"
+        },
+        {
+          "caption": "20%",
+          "value": "_height-20"
+        },
+        {
+          "caption": "25%",
+          "value": "_height-25"
+        },
+        {
+          "caption": "30%",
+          "value": "_height-30"
+        },
+        {
+          "caption": "35%",
+          "value": "_height-35"
+        },
+        {
+          "caption": "40%",
+          "value": "_height-40"
+        },
+        {
+          "caption": "45%",
+          "value": "_height-45"
+        },
+        {
+          "caption": "55%",
+          "value": "_height-55"
+        },
+        {
+          "caption": "60%",
+          "value": "_height-60"
+        },
+        {
+          "caption": "65%",
+          "value": "_height-65"
+        },
+        {
+          "caption": "70%",
+          "value": "_height-70"
+        },
+        {
+          "caption": "75%",
+          "value": "_height-75"
+        },
+        {
+          "caption": "80%",
+          "value": "_height-80"
+        },
+        {
+          "caption": "85%",
+          "value": "_height-85"
+        },
+        {
+          "caption": "90%",
+          "value": "_height-90"
+        },
+        {
+          "caption": "95%",
+          "value": "_height-95"
+        },
+        {
+          "caption": "100%",
+          "value": "_height-100"
+        }
+      ]
+    },
+    "srlp-image-container-hero": {
+      "label": "type of element (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Image Text"
+        },
+        {
+          "caption": "Video Text",
+          "value": "_is-hero-video-text-element"
+        },
+        {
+          "caption": "Herro",
+          "value": "_is-hero-element"
+        },
+        {
+          "caption": "Herro Video",
+          "value": "_is-hero-video-element"
+        }
+      ]
+    },
+    "srlp-image-container-height": {
       "label": "Height of element (Project)",
       "type": "select",
       "options": [
@@ -424,108 +536,6 @@
         }
       ]
     },
-    "srlp-image-container-hero": {
-      "label": "type of element (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Image Text"
-        },
-        {
-          "caption": "Video Text",
-          "value": "_is-hero-video-text-element"
-        },
-        {
-          "caption": "Herro",
-          "value": "_is-hero-element"
-        },
-        {
-          "caption": "Herro Video",
-          "value": "_is-hero-video-element"
-        }
-      ]
-    },
-    "srlp-image-container-height": {
-      "label": "Height of element (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "default (50%)"
-        },
-        {
-          "caption": "10%",
-          "value": "_height-10"
-        },
-        {
-          "caption": "15%",
-          "value": "_height-10"
-        },
-        {
-          "caption": "20%",
-          "value": "_height-20"
-        },
-        {
-          "caption": "25%",
-          "value": "_height-25"
-        },
-        {
-          "caption": "30%",
-          "value": "_height-30"
-        },
-        {
-          "caption": "35%",
-          "value": "_height-35"
-        },
-        {
-          "caption": "40%",
-          "value": "_height-40"
-        },
-        {
-          "caption": "45%",
-          "value": "_height-45"
-        },
-        {
-          "caption": "55%",
-          "value": "_height-55"
-        },
-        {
-          "caption": "60%",
-          "value": "_height-60"
-        },
-        {
-          "caption": "65%",
-          "value": "_height-65"
-        },
-        {
-          "caption": "70%",
-          "value": "_height-70"
-        },
-        {
-          "caption": "75%",
-          "value": "_height-75"
-        },
-        {
-          "caption": "80%",
-          "value": "_height-80"
-        },
-        {
-          "caption": "85%",
-          "value": "_height-85"
-        },
-        {
-          "caption": "90%",
-          "value": "_height-90"
-        },
-        {
-          "caption": "95%",
-          "value": "_height-95"
-        },
-        {
-          "caption": "100%",
-          "value": "_height-100"
-        }
-      ]
-    },
     "srlp-animating-diagrams-columns": {
       "label": "Columns Count (Project)",
       "type": "select",
@@ -582,16 +592,6 @@
           "value": "_col-12"
         }
       ]
-    },
-    "round-portrait": {
-      "label": "Round portrait",
-      "type": "option",
-      "value": "round-portrait"
-    },
-    "hide-quote-characters": {
-      "label": "Hide quote characters before and after",
-      "type": "option",
-      "value": "hide-quote-characters"
     },
     "show-mobile-image": {
       "label": "Show mobile image",
