@@ -33,7 +33,7 @@ function search() {
         <div class="row">
           <div class="col col-6 col-lg-3">
             <div class="logo-holder">
-              <router-link class="srl-header__inner-logo" :to="{ path: `/${locale}` }">
+              <router-link class="srl-header__inner-logo" :to="{ path: `/${locale}/overview` }">
                 <svg width="232" height="72" viewBox="0 0 232 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="232" height="72" fill="url(#pattern0_1231_2472)"/>
                   <defs>

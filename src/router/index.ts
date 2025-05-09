@@ -5,6 +5,9 @@ import SearchView from '@/views/SearchView.vue'
 import DownloadsView from '@/views/DownloadsView.vue'
 import ArticleView from '@/views/ArticleView.vue'
 import PageNotFound from '@/views/PageNotFound.vue'
+import RedirectView from '@/views/RedirectView.vue'
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.BASE_URL),
@@ -12,6 +15,24 @@ const router = createRouter({
     window.scrollTo(0, 0)
   },
   routes: [
+    {
+      path: '/',
+      name: 'rootRedirect',
+      component: () => RedirectView,
+      beforeEnter: Tr.routeMiddleware
+    },
+    {
+      path: '/en',
+      name: 'rootRedirect',
+      component: () => RedirectView,
+      beforeEnter: Tr.routeMiddleware
+    },
+    {
+      path: '/de',
+      name: 'rootRedirect',
+      component: () => RedirectView,
+      beforeEnter: Tr.routeMiddleware
+    },
     {
       path: '/:locale?',
       name: 'home',
