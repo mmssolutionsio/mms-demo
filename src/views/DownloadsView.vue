@@ -20,6 +20,8 @@ async function getDownloads() {
   }
 }
 
+
+
 watch(route, () => getDownloads())
 getDownloads()
 </script>
@@ -35,9 +37,8 @@ getDownloads()
     </div>
     <transition name="fade">
       <ul v-if="downloadData.structure.length" class="srl-download__list">
-<!--        //TODO Link to Download File-->
         <li v-for="(item, index) in downloadData?.structure" :key="index">
-          <a href="" target="_blank">
+          <a :href="`./downloads/${locale}/${item.artifact}`" target="_blank">
             <div class="svg-holder">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
