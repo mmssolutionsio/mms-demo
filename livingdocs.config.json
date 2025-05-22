@@ -215,23 +215,6 @@
         }
       ]
     },
-    "srlp-pdf-multi-column-container-count": {
-      "label": "Column Count (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (2)"
-        },
-        {
-          "caption": "3 Column",
-          "value": "_is_3_columns"
-        },
-        {
-          "caption": "4 Column",
-          "value": "_is_4_columns"
-        }
-      ]
-    },
     "srlp-pdf-marginal-columns-position": {
       "label": "Position (Project - PDF ONLY)",
       "type": "select",
@@ -242,27 +225,6 @@
         {
           "caption": "Marginal Right",
           "value": "_is_marginal_right"
-        }
-      ]
-    },
-    "srlp-pdf-cover-page-type": {
-      "label": "Type (Project - PDF ONLY)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "Default (Only Image)"
-        },
-        {
-          "caption": "Essence Orange, text at bottom.",
-          "value": "_is_color_label_btn"
-        },
-        {
-          "caption": "Essence Orange, text at top.",
-          "value": "_is_color_label_top"
-        },
-        {
-          "caption": "Main cover",
-          "value": "_is_main_cover"
         }
       ]
     },
@@ -288,6 +250,100 @@
       ]
     },
     "srlp-image-container-height": {
+      "label": "Height of element (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "default (50%)"
+        },
+        {
+          "caption": "10%",
+          "value": "_height-10"
+        },
+        {
+          "caption": "15%",
+          "value": "_height-10"
+        },
+        {
+          "caption": "20%",
+          "value": "_height-20"
+        },
+        {
+          "caption": "25%",
+          "value": "_height-25"
+        },
+        {
+          "caption": "30%",
+          "value": "_height-30"
+        },
+        {
+          "caption": "35%",
+          "value": "_height-35"
+        },
+        {
+          "caption": "40%",
+          "value": "_height-40"
+        },
+        {
+          "caption": "45%",
+          "value": "_height-45"
+        },
+        {
+          "caption": "55%",
+          "value": "_height-55"
+        },
+        {
+          "caption": "60%",
+          "value": "_height-60"
+        },
+        {
+          "caption": "65%",
+          "value": "_height-65"
+        },
+        {
+          "caption": "70%",
+          "value": "_height-70"
+        },
+        {
+          "caption": "75%",
+          "value": "_height-75"
+        },
+        {
+          "caption": "80%",
+          "value": "_height-80"
+        },
+        {
+          "caption": "85%",
+          "value": "_height-85"
+        },
+        {
+          "caption": "90%",
+          "value": "_height-90"
+        },
+        {
+          "caption": "95%",
+          "value": "_height-95"
+        },
+        {
+          "caption": "100%",
+          "value": "_height-100"
+        }
+      ]
+    },
+    "srlp-image-box": {
+      "label": "Image Position (Project)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Left"
+        },
+        {
+          "caption": "Right",
+          "value": "_img-pos-right"
+        }
+      ]
+    },
+    "srlp-image-box-height": {
       "label": "Height of element (Project)",
       "type": "select",
       "options": [
@@ -442,97 +498,24 @@
         }
       ]
     },
-    "srlp-image-box": {
-      "label": "Image Position (Project)",
+    "srlp-pdf-cover-page-type": {
+      "label": "Type (Project - PDF ONLY)",
       "type": "select",
       "options": [
         {
-          "caption": "Left"
+          "caption": "Default (Only Image)"
         },
         {
-          "caption": "Right",
-          "value": "_img-pos-right"
-        }
-      ]
-    },
-    "srlp-image-box-height": {
-      "label": "Height of element (Project)",
-      "type": "select",
-      "options": [
-        {
-          "caption": "default (50%)"
+          "caption": "Essence Orange, text at bottom.",
+          "value": "_is_color_label_btn"
         },
         {
-          "caption": "10%",
-          "value": "_height-10"
+          "caption": "Essence Orange, text at top.",
+          "value": "_is_color_label_top"
         },
         {
-          "caption": "15%",
-          "value": "_height-10"
-        },
-        {
-          "caption": "20%",
-          "value": "_height-20"
-        },
-        {
-          "caption": "25%",
-          "value": "_height-25"
-        },
-        {
-          "caption": "30%",
-          "value": "_height-30"
-        },
-        {
-          "caption": "35%",
-          "value": "_height-35"
-        },
-        {
-          "caption": "40%",
-          "value": "_height-40"
-        },
-        {
-          "caption": "45%",
-          "value": "_height-45"
-        },
-        {
-          "caption": "55%",
-          "value": "_height-55"
-        },
-        {
-          "caption": "60%",
-          "value": "_height-60"
-        },
-        {
-          "caption": "65%",
-          "value": "_height-65"
-        },
-        {
-          "caption": "70%",
-          "value": "_height-70"
-        },
-        {
-          "caption": "75%",
-          "value": "_height-75"
-        },
-        {
-          "caption": "80%",
-          "value": "_height-80"
-        },
-        {
-          "caption": "85%",
-          "value": "_height-85"
-        },
-        {
-          "caption": "90%",
-          "value": "_height-90"
-        },
-        {
-          "caption": "95%",
-          "value": "_height-95"
-        },
-        {
-          "caption": "100%",
-          "value": "_height-100"
+          "caption": "Main cover",
+          "value": "_is_main_cover"
         }
       ]
     },
@@ -593,6 +576,23 @@
         }
       ]
     },
+    "srlp-pdf-multi-column-container-count": {
+      "label": "Column Count (Project - PDF ONLY)",
+      "type": "select",
+      "options": [
+        {
+          "caption": "Default (2)"
+        },
+        {
+          "caption": "3 Column",
+          "value": "_is_3_columns"
+        },
+        {
+          "caption": "4 Column",
+          "value": "_is_4_columns"
+        }
+      ]
+    },
     "show-mobile-image": {
       "label": "Show mobile image",
       "type": "option",
@@ -602,6 +602,23 @@
       "label": "Show PDF image",
       "type": "option",
       "value": "show-pdf-image"
+    },
+    "horizontal-alignment": {
+      "label": "Horizontal alignment",
+      "type": "select",
+      "options": [
+        {
+          "caption": "left"
+        },
+        {
+          "caption": "center",
+          "value": "horizontal-center"
+        },
+        {
+          "caption": "right",
+          "value": "horizontal-right"
+        }
+      ]
     },
     "vertical-alignment": {
       "label": "Vertical alignment",
@@ -649,23 +666,6 @@
       "label": "Switch sides",
       "type": "option",
       "value": "revert"
-    },
-    "horizontal-alignment": {
-      "label": "Horizontal alignment",
-      "type": "select",
-      "options": [
-        {
-          "caption": "left"
-        },
-        {
-          "caption": "center",
-          "value": "horizontal-center"
-        },
-        {
-          "caption": "right",
-          "value": "horizontal-right"
-        }
-      ]
     }
   },
   "groups": [

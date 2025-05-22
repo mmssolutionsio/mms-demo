@@ -8,6 +8,7 @@ export default class extends ArticleLoader {
     this.noteLinks = this.element.querySelectorAll('.note-link');
 
     const config = await useConfig();
+    const baseUrl = import.meta.env.BASE_URL || '/';
 
 
 
@@ -21,16 +22,27 @@ export default class extends ArticleLoader {
           return parts.find(p => possibleLangs.includes(p)) || 'en';
         }
 
-        const lang = extractLangFromPath(window.location.pathname);
+
 
         //const lang = window.location.pathname.substring(1).split('/').shift();
-
+        const lang = extractLangFromPath(window.location.pathname);
         const elem = e.target;
         const uuid = elem.href.split('/').pop();
         const article = config.value.articles[lang].find(a=>a.uuid === uuid);
 
+        console.log(window.location.origin)
+        console.log(window.location.href)
+        console.log(window.location.pathname)
+        console.log('+++++++++++++++++')
+        console.log(baseUrl)
+        console.log(lang)
+        console.log(elem)
+        console.log(uuid)
+        console.log(article)
+
         try {
           const file = `./html/${lang}/${article.name}.html`;
+          console.log(file)
           try {
             const res = await fetch(file, {
               redirect: 'error',
