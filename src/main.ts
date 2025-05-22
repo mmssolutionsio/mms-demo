@@ -9,8 +9,13 @@ import router from './router'
 
 useConfig().then(async () => {
   const awi18n = await initI18n()
-  window.app = createApp(App)
-  window.app.use(awi18n)
-  window.app.use(router)
-  window.app.mount('#app')
+
+  const app = createApp(App)
+  app.use(awi18n)
+  app.use(router)
+
+  const instance = app.mount('#app')
+
+  window.app = app
+  window.appInstance = instance
 })

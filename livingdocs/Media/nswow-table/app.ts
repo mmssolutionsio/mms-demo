@@ -37,14 +37,16 @@ export default class extends ArticleLoader {
               redirect: 'error',
             });
 
+
             const html = await res.text();
             if (html.includes('window.baseUrl')) {
               console.error(`"${file}" could not be loaded. A`);
             } else {
-              window.app._instance.root.refs.modal.setContent(html);
+              window.appInstance?.$refs?.modal?.setContent(html);
             }
           } catch (e) {
             console.error(`"${file}" could not be loaded. B`);
+            console.error(e);
           }
         }catch (e){
           console.error(` could not be find article with ${uuid}.`);
