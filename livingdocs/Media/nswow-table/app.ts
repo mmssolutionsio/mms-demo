@@ -30,31 +30,21 @@ export default class extends ArticleLoader {
         const uuid = elem.href.split('/').pop();
         const article = config.value.articles[lang].find(a=>a.uuid === uuid);
 
-        console.log(window.location.origin)
-        console.log(window.location.href)
-        console.log(window.location.pathname)
-        console.log('+++++++++++++++++')
-        console.log(baseUrl)
-        console.log(lang)
-        console.log(elem)
-        console.log(uuid)
-        console.log(article)
-
         try {
           const file = `./html/${lang}/${article.name}.html`;
-          console.log(file)
           try {
             const res = await fetch(file, {
               redirect: 'error',
             });
+
             const html = await res.text();
             if (html.includes('window.baseUrl')) {
-              console.error(`"${file}" could not be loaded.`);
+              console.error(`"${file}" could not be loaded. A`);
             } else {
               window.app._instance.root.refs.modal.setContent(html);
             }
           } catch (e) {
-            console.error(`"${file}" could not be loaded.`);
+            console.error(`"${file}" could not be loaded. B`);
           }
         }catch (e){
           console.error(` could not be find article with ${uuid}.`);
